@@ -1,0 +1,171 @@
+/**************************Begin Login WP.php***************** */
+body.login {
+	background: #fbfbfb url('grey_wash_wall.png');
+	}
+#login{
+	padding-top:1em;
+}
+/**************************END Login WP.php******************* */
+.login h1 a {
+	background-image: url('logo.png');
+	background-size: 330px 132px;
+	width: 330px;
+	height: 132px;
+	margin: 0;
+}
+
+.login form, .message.register {
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+	background: #343131 none repeat scroll 0 0;
+    border: 1px solid #eed025;
+    box-shadow: 2px 2px 2px #000;
+    padding: 30px;
+  overflow: hidden;
+}
+.message.register,#login p.message, .login #login_error{
+	text-align: left;
+	vertical-align: top;
+		background: rgba(0, 0, 0, 0) -moz-linear-gradient(-45deg, #eed025 70%, #343131 70%, #343131 75%, #eed025 75%, #eed025 80%, #343131 80%, #343131 85%, #eed025 85%, #eed025 90%, #343131 90%, #343131 95%, #eed025 95%) repeat scroll 0 0;
+    box-shadow: 2px 2px 2px #000;
+    color: black;
+    font-weight:bold;
+    padding: 0 5px 0 10px;
+    border: 1px solid #eed025;
+    border-bottom:none;
+        
+}
+.login #login_error{
+	background: rgba(0, 0, 0, 0) -moz-linear-gradient(-45deg, #eed025 70%, #343131 70%, #343131 75%, #eed025 75%, #eed025 80%, #343131 80%, #343131 85%, #eed025 85%, #eed025 90%, #343131 90%, #343131 95%, #eed025 95%) repeat scroll 0 0;
+    
+}
+.login form input {
+	border: 1px solid #787575;
+    color: #eee;
+    display: inline-block;
+    height: auto;
+    margin-top: 15px;
+    opacity: 1;
+    outline: medium none;
+    padding: 2px 8px;
+    position: relative;
+    vertical-align: top;
+        
+}
+
+.login form input:focus,
+.login form textarea:focus {
+	/*background-color: rgba(0, 0, 0, 0.2);*/
+	-moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+	-webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+	box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+	overflow: hidden;
+}
+.login label {
+	color: #fff;
+	line-height: 26px;
+}
+
+.login form .input, .login input[type="text"] {
+ color: #8c8a8;
+ border: 1px solid #787575;
+    color: #eee;
+    background: #3e3636;
+    box-shadow: 2px 2px 1px black;
+    padding: 0.1em 0.3em;
+    
+         }
+input#rememberme {
+	height: 18px;
+	width: 18px;
+	display: inline;
+	vertical-align: middle;
+	margin: 10px 0;
+
+
+
+}
+input.button-primary {
+	width: 138px;
+	height: 44px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	float:right;
+	border: 1px solid #3d5a5a;
+	background: #416b68;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6da5a3), to(#416b68));
+	background: -webkit-linear-gradient(top, #6da5a3, #416b68);
+	background: -moz-linear-gradient(top, #6da5a3, #416b68);
+	background: -ms-linear-gradient(top, #6da5a3, #416b68);
+	background: -o-linear-gradient(top, #6da5a3, #416b68);
+	background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+	padding: 10.5px 21px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+	-moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+	box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+	text-shadow: #333333 0 1px 0;
+	color: #e1e1e1;
+}
+
+input.button-primary:hover {
+	border: 1px solid #3d5a5a;
+	text-shadow: #333333 0 1px 0;
+	background: #416b68;
+	background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+	background: -webkit-linear-gradient(top, #77b2b0, #416b68);
+	background: -moz-linear-gradient(top, #77b2b0, #416b68);
+	background: -ms-linear-gradient(top, #77b2b0, #416b68);
+	background: -o-linear-gradient(top, #77b2b0, #416b68);
+	background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+	color: #fff;
+}
+
+input.button-primary:active {
+	margin-top:1px;
+	text-shadow: #333333 0 -1px 0;
+	border: 1px solid #3d5a5a;
+	background: #6da5a3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#416b68), to(#416b68));
+	background: -webkit-linear-gradient(top, #416b68, #609391);
+	background: -moz-linear-gradient(top, #416b68, #6da5a3);
+	background: -ms-linear-gradient(top, #416b68, #6da5a3);
+	background: -o-linear-gradient(top, #416b68, #6da5a3);
+	background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
+	color: #fff;
+	-webkit-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+	-moz-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+	box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+}
+#registerform > p {
+    color: #ccc;
+}
+#nav, #backtoblog{
+	text-align: center;
+}
+.login #backtoblog a, .login #nav a, .login h1 a {
+    color: #eed045;
+    text-decoration: none;
+    font-weight: bold;
+}
+.login #backtoblog a:hover, .login #nav a:hover, .login h1 a:hover{
+	color:#eed025;
+	text-decoration:underline;
+}
+.button.button-primary.button-large{
+	background: #111 none repeat scroll 0 0;
+    border: 1px solid gray;
+    cursor: pointer;
+    box-shadow: 2px 2px 1px black;
+   
+}
+.button.button-primary.button-large:hover{
+	color:#eee025;
+}
+
+

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        портфолио-3
+    </title>
+    <link rel="stylesheet" href="3.css">
+    <meta charset="utf-8">
+
+    <script>
+        var a;
+
+        function down() {
+            document.getElementById('box1').style.marginTop = '-193px';
+        }
+
+        function up() {
+            document.getElementById('box1').style.marginTop = '0px';
+        }
+
+        function next() {
+            document.getElementById('content_box1').style.visiblity = "hidden";
+            document.getElementById('content_box1').style.display = "none";
+            document.getElementById('content_box2').style.display = "block";
+            document.getElementById('content_box2').style.visiblity = "visible";
+        }
+
+        function prev() {
+            document.getElementById('content_box2').style.visiblity = "hidden";
+            document.getElementById('content_box2').style.display = "none";
+            document.getElementById('content_box1').style.display = "block";
+            document.getElementById('content_box1').style.visiblity = "visible";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main_bg">
+
+        <div class="main">
+            <a href="javascript:void(0)"><img src="img/lable.jpg" alt="javascript:void(0)">
+            </a>
+            <ul class="spis">
+                <li class="active">home</li>
+                <li> <a href="javascript:void(0)">servise <img src="img/down.png" alt=""></a>
+                    <ul>
+                        <li><a href="javascript:void(0)">web desing</a>
+                        </li>
+                        <li><a href="javascript:void(0)">graphic desing</a>
+                        </li>
+                        <li><a href="javascript:void(0)">worldpress development</a>
+                        </li>
+                        <li><a href="javascript:void(0)">SEO consulting</a>
+                        </li>
+                        <li><a href="javascript:void(0)">identity</a>
+                        </li>
+                    </ul>
+                </li>
+                <li> <a href="javascript:void(0)">portfolio</a>
+                </li>
+                <li> <a href="javascript:void(0)">blog</a>
+                </li>
+                <li> <a href="javascript:void(0)">about us</a>
+                </li>
+                <li> <a href="javascript:void(0)">contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header_bg">
+        <div class="header">
+            <img src="img/foto.jpg" alt="">
+            <div class="header_tring"></div>
+            <div class="header_content">
+                <h1>I Create Beautiful Sites for My Clients</h1>
+                <p>Volutpat sodales. Cras sit amet posuere elit. Integer a pretium mau lla facilisi. Etiam libero metus, mollis at pretium non, convallis id tell sed arcu neque
+                </p>
+
+                <p>Vestibulum posuere hendrerit justo, eget cursus metus tincidunt Curabitur aliquet nibh a lectus dapibus ultricies.
+                </p>
+                <a href="javascript:void(0)">view portfolio</a>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="cont_bg">
+        <div class="cont">
+            <div class="sidebar">
+
+                <h1>Latest blog post
+	 					<a href="javascript:void(0)" onClick="down()"><img src="img/down.png" alt=""></a>
+	 					<a class="activ" href="javascript:void(0)" onClick="up()"><img src="img/down.png" alt=""></a>
+	 					
+	 				</h1>
+                <div class="content_slid">
+                    <div class="box" id="box1">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTIF-ChFHjtSpI9c12tlScPNCtRUP6cjRjMjsf72dkQ_TzIHxT-Q" alt="">
+                        <h2>Nulla ullamcorper vulp utate sapien</h2>
+                        <a href="javascript:void(0)">Posted by  charlie     |     design  -   php   -  wordpress</a>
+                        <hr>
+                        <p>Cras posuere, ipsum nec lobortis iaculis, metus quam convallis eros, at suscipit ante </p>
+                        <a class="readmore" href="javascript:void(0)">read more</a>
+                    </div>
+                    <div class="box" id="box2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqkDUWDiEsl96V04DGeYZGBEJj4iLkPn4ApUwwdeQ6Eh5LkQhC" alt="">
+                        <h2>Nulla ullamcorper vulp utate sapien</h2>
+                        <a href="javascript:void(0)">Posted by  charlie     |     design  -   php   -  wordpress</a>
+                        <hr>
+                        <p>Cras posuere, ipsum nec lobortis iaculis, metus quam convallis eros, at suscipit ante </p>
+                        <a class="readmore" href="javascript:void(0)">read more</a>
+                    </div>
+
+                    <div class="box" id="box3">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-U8g3TV0F38N7qbAbp4K5Ty-VUNuP5tIwZPcgvBp4RyCHN_g4LA" alt="">
+                        <h2>Nulla ullamcorper vulp utate sapien</h2>
+                        <a href="javascript:void(0)">Posted by  charlie     |     design  -   php   -  wordpress</a>
+                        <hr>
+                        <p>Cras posuere, ipsum nec lobortis iaculis, metus quam convallis eros, at suscipit ante </p>
+                        <a class="readmore" href="javascript:void(0)">read more</a>
+                    </div>
+                    <div class="box" id="box4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqkDUWDiEsl96V04DGeYZGBEJj4iLkPn4ApUwwdeQ6Eh5LkQhC" alt="">
+                        <h2>Nulla ullamcorper vulp utate sapien</h2>
+                        <a href="javascript:void(0)">Posted by  charlie     |     design  -   php   -  wordpress</a>
+                        <hr>
+                        <p>Cras posuere, ipsum nec lobortis iaculis, metus quam convallis eros, at suscipit ante </p>
+                        <a class="readmore" href="javascript:void(0)">read more</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="content">
+                <div class="tic">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" class="tic_active" onClick="prev()"><img src="img/down.png">
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onClick="next()"><img src="img/down.png">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="wrapper">
+                    <div id="content_box1">
+                        <h1>Ut rutrum suscipit convallisris</h1>
+                        <div class="cont_box">
+                            <h2><img src="img/icon_1.png" alt="">Ut rutrum sus cipit con</h2>
+                            <p>Praesent varius faucibus nibh, nec imperdiet metus semper id. sent laoreet, leo quis gravida </p>
+                            <a href="javascript:void(0)">more</a>
+                        </div>
+                        <div class="cont_box">
+                            <h2><img src="img/icon_2.png" alt="">Ut rutrum sus cipit con</h2>
+                            <p>Praesent varius faucibus nibh, nec imperdiet metus semper id. sent laoreet, leo quis gravida </p>
+                            <a href="javascript:void(0)">more</a>
+                        </div>
+                        <div class="cont_box">
+                            <h2><img src="img/icon_3.png" alt="">Ut rutrum sus cipit con</h2>
+                            <p>Praesent varius faucibus nibh, nec imperdiet metus semper id. sent laoreet, leo quis gravida </p>
+                            <a href="javascript:void(0)">more</a>
+                        </div>
+                        <div class="cont_box">
+                            <h2><img src="img/icon_4.png" alt="">Ut rutrum sus cipit con</h2>
+                            <p>Praesent varius faucibus nibh, nec imperdiet metus semper id. sent laoreet, leo quis gravida </p>
+                            <a href="javascript:void(0)">more</a>
+                        </div>
+                        <h3><img src="img/icon_5.png" alt="">Follow me on twitter</h3>
+                        <p>A nice shot of my upcoming landing page design for the new category at #themeforest <a href="javascript:void(0)">http://drbl.in/DRH</a>
+                        </p>
+                        <h4>2 days ago</h4>
+                        <hr>
+                        <p>A nice shot of my upcoming landing page design for the new category at #themeforest <a href="javascript:void(0)">http://drbl.in/DRH</a>
+                        </p>
+                        <h4>2 days ago</h4>
+                    </div>
+
+                    <div id="content_box2">
+                        <h1>Find me my friends</h1>
+                        <div class="cont_box">
+                            <h2><img src="img/icon_4.png" alt="">Welcom for look my jobs</h2>
+                            <p>Praesent varius faucibus nibh, nec imperdiet metus semper id. sent laoreet, leo quis gravida </p>
+                            <a href="javascript:void(0)">more</a>
+                        </div>
+                        <div class="cont_box">
+                            <h2><img src="img/icon_3.png" alt="">Welcom for look my jobs</h2>
+                            <p>Praesent varius faucibus nibh, nec imperdiet metus semper id. sent laoreet, leo quis gravida </p>
+                            <a href="javascript:void(0)">more</a>
+                        </div>
+                        <div class="cont_box">
+                            <h2><img src="img/icon_1.png" alt="">Welcom for look my jobs</h2>
+                            <p>Praesent varius faucibus nibh, nec imperdiet metus semper id. sent laoreet, leo quis gravida </p>
+                            <a href="javascript:void(0)">more</a>
+                        </div>
+                        <div class="cont_box">
+                            <h2><img src="img/icon_2.png" alt="">Welcom for look my jobs</h2>
+                            <p>Praesent varius faucibus nibh, nec imperdiet metus semper id. sent laoreet, leo quis gravida </p>
+                            <a href="javascript:void(0)">more</a>
+                        </div>
+                        <h3><img src="img/icon_5.png" alt="">Follow me on twitter</h3>
+                        <p>A nice shot of my upcoming landing page design for the new category at #themeforest <a href="javascript:void(0)">http://drbl.in/DRH</a>
+                        </p>
+                        <h4>2 days ago</h4>
+                        <hr>
+                        <p>A nice shot of my upcoming landing page design for the new category at #themeforest <a href="javascript:void(0)">http://drbl.in/DRH</a>
+                        </p>
+                        <h4>2 days ago</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="after_cont_bg">
+            <div class="after_cont">
+                <div class="right">
+                    <h1>Text widget</h1>
+                    <p>Mauris ultrices sodales pretium. Nulla ullamcorper vulputate sapien ut accumsan. Etiam volutpat, purus ut dignissim tincidunt, quam erat consectetur Vestibulum sit amet accumsan ipsum
+                    </p>
+                    <p>
+                        metus, eget pharetra dolor mi vel anteQuisque posuere dolor sed ligula faci
+                    </p>
+                    <a href="javascript:void(0)"><b>more</b></a>
+                </div>
+                <div class="center">
+                    <h1>Get in Touch</h1>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)"><img src="img/logo_1.png" alt=""> Like me on FaceBook</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="img/logo_2.png" alt=""> Follow me on Twitter</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="img/logo_3.png" alt=""> Subscribe to my RSS Feeds</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="img/logo_4.png" alt=""> Get in touch by Mail</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="img/logo_5.png" alt=""> My shots on Flickr</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><img src="img/logo_6.png" alt=""> My LinkedIn profile</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left">
+                    <h1>Quick contact</h1>
+                    <p>Aenean blandit auctor ullamcorper. Mauris eu enim vitae tellu ultrices vulputate in ac nibh. In viverra, enim ut varius </p>
+                    <form action="">
+                        <textarea name="" id=""></textarea>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="E-mail">
+                        <input type="text" placeholder="Subjekt">
+                        <input type="submit" class="submit" value="submit">
+                    </form>
+                </div>
+                <hr class="gr">
+
+                <footer>
+                    <a href="javascript:void(0)">© 2010 bubblelicious.com  |  All Rights Reserved</a>
+                    <ul>
+                        <li><a href="javascript:void(0)">About</a>
+                        </li>
+                        <li><a href="javascript:void(0)">Facebook</a>
+                        </li>
+                        <li><a href="javascript:void(0)">Twitter</a>
+                        </li>
+                        <li><a href="javascript:void(0)">Contact</a>
+                        </li>
+                    </ul>
+
+                </footer>
+            </div>
+
+
+        </div>
+
+</body>
+
+</html>

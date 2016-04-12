@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Портфолио№_2</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="2.css">
+		<script>
+		window.onload = img1;
+			function img1(){
+				clearTimeout();
+				document.getElementById('pik_1').style.visibility="visible";
+				document.getElementById('pik_1').style.opacity = "1";
+				
+				document.getElementById('pik_2').style.opacity = "0";
+				document.getElementById('pik_3').style.opacity = "0";
+				document.getElementById('pik_4').style.opacity = "0";
+
+				document.getElementById('pik_2').style.visibility="hidden";
+				document.getElementById('pik_3').style.visibility="hidden";
+				document.getElementById('pik_4').style.visibility="hidden";
+
+				document.getElementById('point1').style.backgroundImage = 'url(img/activ_point.png)';
+				document.getElementById('point2').style.backgroundImage = 'url(img/not_activ_point.png)';
+				document.getElementById('point3').style.backgroundImage = 'url(img/not_activ_point.png)';
+				document.getElementById('point4').style.backgroundImage = 'url(img/not_activ_point.png)';
+				setTimeout(img2, 4000);
+
+
+			}
+			function img2(){
+				clearTimeout();
+				document.getElementById('pik_2').style.visibility="visible";
+				document.getElementById('pik_2').style.opacity = "1";
+				document.getElementById('pik_1').style.opacity = "0";
+				document.getElementById('pik_3').style.opacity = "0";
+				document.getElementById('pik_4').style.opacity = "0";
+
+				document.getElementById('pik_1').style.visibility="hidden";
+				document.getElementById('pik_3').style.visibility="hidden";
+				document.getElementById('pik_4').style.visibility="hidden";
+
+				document.getElementById('point2').style.backgroundImage = 'url(img/activ_point.png)';
+				document.getElementById('point1').style.backgroundImage = 'url(img/not_activ_point.png)';
+				document.getElementById('point3').style.backgroundImage = 'url(img/not_activ_point.png)';
+				document.getElementById('point4').style.backgroundImage = 'url(img/not_activ_point.png)';
+				setTimeout(img3, 4000);
+			}
+			function img3(){
+				clearTimeout();
+				document.getElementById('pik_3').style.visibility="visible";
+				document.getElementById('pik_3').style.opacity = "1";
+				document.getElementById('pik_1').style.opacity = "0";
+				document.getElementById('pik_2').style.opacity = "0";
+				document.getElementById('pik_4').style.opacity = "0";
+
+				document.getElementById('pik_1').style.visibility="hidden";
+				document.getElementById('pik_2').style.visibility="hidden";
+				document.getElementById('pik_4').style.visibility="hidden";
+
+				document.getElementById('point3').style.backgroundImage = 'url(img/activ_point.png)';
+				document.getElementById('point2').style.backgroundImage = 'url(img/not_activ_point.png)';
+				document.getElementById('point1').style.backgroundImage = 'url(img/not_activ_point.png)';
+				document.getElementById('point4').style.backgroundImage = 'url(img/not_activ_point.png)';
+				setTimeout(img4, 4000);
+			}
+			function img4(){
+				clearTimeout();
+				document.getElementById('pik_4').style.visibility="visible";
+				document.getElementById('pik_4').style.opacity = "1";
+				document.getElementById('pik_1').style.opacity = "0";
+				document.getElementById('pik_3').style.opacity = "0";
+				document.getElementById('pik_2').style.opacity = "0";
+
+				document.getElementById('pik_1').style.visibility="hidden";
+				document.getElementById('pik_3').style.visibility="hidden";
+				document.getElementById('pik_2').style.visibility="hidden";
+
+				document.getElementById('point4').style.backgroundImage = 'url(img/activ_point.png)';
+				document.getElementById('point2').style.backgroundImage = 'url(img/not_activ_point.png)';
+				document.getElementById('point3').style.backgroundImage = 'url(img/not_activ_point.png)';
+				document.getElementById('point1').style.backgroundImage = 'url(img/not_activ_point.png)';
+				setTimeout(img1, 4000);
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="header_all">
+			<div class="header_center">
+				<div class="header_pad"><a href="javascript:void(0)"><img src="img/lable.png" alt="lable"></a>
+					<div class="header_list">
+					<ul>
+						<li><a href="javascript:void(0)" class="active">Home</a></li>
+						<li><a href="javascript:void(0)">Services</a></li>
+						<li><a href="javascript:void(0)">Portfolio</a></li>
+						<li><a href="javascript:void(0)">Testimonia</a></li>
+						<li><a href="javascript:void(0)">Blog</a></li>
+						<li><a href="javascript:void(0)">Contact Us</a></li>						
+					</ul>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="priwey">
+		<div class="wrapper">
+		<div id="pik_1"><a href="javascript:void(0)" title="Подробнее о товаре!"><img src="img/img11.png" ></a>	</div>
+		<div id="pik_2"><a href="javascript:void(0)" title="Подробнее о товаре!"><img src="img/img21.png" ></a>	</div>
+		<div id="pik_3"><a href="javascript:void(0)" title="Подробнее о товаре!"><img src="img/img31.png" ></a>	</div>
+		<div id="pik_4"><a href="javascript:void(0)" title="Подробнее о товаре!"><img src="img/img41.png" ></a>	</div>
+			<div class="points">
+				<a id="point1" href="javascript:void(0)" onClick="img1()"></a>
+				<a id="point2" href="javascript:void(0)" onClick="img2()"></a>
+				<a id="point3" href="javascript:void(0)" onClick="img3()"></a>
+				<a id="point4" href="javascript:void(0)" onClick="img4()"></a>
+			</div>	
+			</div>	
+		</div>
+
+		<div class="bord">
+			<div class="text">
+			<p>We can make your online business easy & usable for all walks of people</p>
+			
+			<a class="botton" href="javascript:void(0)">LET'S START</br><span>YOUR WEBSAIT</span></a>
+			</div>
+			
+			
+						
+		</div>
+
+		<div class="content">
+			<div class="block"><img src="img/1.jpg" alt="javascript:void(0)"><h3>Business Heading</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mi id libero egestas ut interdum nibh cursus. </p><a href="javascript:void(0)">Read More ></a></div>
+			<div class="block"><img src="img/2.jpg" alt="javascript:void(0)"><h3>Business Heading</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mi id libero egestas ut interdum nibh cursus. </p><a href="javascript:void(0)">Read More ></a></div>
+			<div class="block"><img src="img/3.jpg" alt="javascript:void(0)"><h3>Business Heading</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mi id libero egestas ut interdum nibh cursus. </p><a href="javascript:void(0)">Read More ></a></div>
+			<div class="block"><img src="img/4.jpg" alt="javascript:void(0)"><h3>Business Heading</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mi id libero egestas ut interdum nibh cursus. </p><a href="javascript:void(0)">Read More ></a></div>
+		</div>
+
+		<div class="after_content">
+			<div class="all_block_4">
+				<div class="block_4">
+					<h3><img src="img/block4_1.png" alt="img">
+					Title Heading</h3>
+					<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Aliqu am tincidunt mi id libero egestas ut interdum nibh cursus. </p>
+				</div>
+				<div class="block_4">
+					<h3><img src="img/block4_2.png" alt="img">
+					Title Heading</h3>
+					<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Aliqu am tincidunt mi id libero egestas ut interdum nibh cursus. </p>
+				</div>
+				<div class="clear"></div>
+				<div class="block_4">
+					<h3><img src="img/block4_3.png" alt="img">
+					Title Heading</h3>
+					<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Aliqu am tincidunt mi id libero egestas ut interdum nibh cursus. </p>
+				</div>
+				<div class="block_4">
+					<h3><img src="img/block4_4.png" alt="img">
+					Title Heading</h3>
+					<p>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Aliqu am tincidunt mi id libero egestas ut interdum nibh cursus. </p>
+				</div>
+			</div>
+
+			<div class="content_2">
+				<h3>About the Company</h3> 
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt mi id libero egestas ut interdum nibh cursus. Nulla erat orci, adipiscing 	vel molestie ac, vehicula in dui. Proin vel lorem in tellus placerat eleifend. Duis iaculis lorem a ipsum euismod vel ullamcorper arcu placerat. Aenean 	elementum tortor vel nisi bibendum bibendum. Aliquam fringilla feugiat ante in vestibulum. Sed non justo justo. Aeneanet 	quam dolor. Vivamus aliquet 	gravida nunc, sed elementum elit blandit vel. Aliquam neque quam, dignissim ac mattis at, hendrerit necelit. Cras 	commodo gravida placerat. </p>
+				<a href="javascript:void(0)">Read more ></a>
+			</div>
+		</div>
+
+		<div class="footer_bg">
+			<div class="footer">
+				<div class="footer_left">
+					<ul>
+						<li><a href="javascript:void(0)">Home</a></li>
+						<li><a href="javascript:void(0)">Service</a></li>
+						<li><a href="javascript:void(0)">Potfolio</a></li>
+						<li><a href="javascript:void(0)">Testimonial</a></li>
+						<li><a href="javascript:void(0)">Blog</a></li>
+						<li><a href="javascript:void(0)">Contact Us</a></li>
+					</ul>
+					<ul class="spis">
+						<li><a href="javascript:void(0)">2010 WebCorp LLC</a></li>
+						<li><a href="javascript:void(0)">Terms of service</a></li>
+						<li><a href="javascript:void(0)">Privacy policy</a></li>
+					</ul>
+					<p>icons courtesy <a href="javascript:void(0)">IconFinder.com</a></p>					
+				</div>
+				<div class="footer_right">
+					<span>Connect with us</span>
+						<a href="javascript:void(0)"><img src="img/twit.png" alt="javascript:void(0)"></a>
+						<a href="javascript:void(0)"><img src="img/face.png" alt="javascript:void(0)"></a>
+						<a href="javascript:void(0)"><img src="img/in.png" alt="javascript:void(0)"></a>
+						<a href="javascript:void(0)"><img src="img/mail.png" alt="javascript:void(0)"></a>
+					
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

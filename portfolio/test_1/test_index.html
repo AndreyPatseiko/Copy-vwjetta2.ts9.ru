@@ -1,0 +1,352 @@
+<!DOCTUPE html>
+<html>
+	<head>
+		<title>Калькулятор КАСКО онлайн – Интач Страхование	</title>
+		<link rel="stylesheet" href="test_css.css">
+		<script type="text/javascript" src="test_js.js"></script>
+		<link href="https://www.in-touch.ru/favicon.ico" rel="shortcut icon">
+		<meta charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+		</head>
+
+		<body>
+			<header>
+				<div class="head_wrapper">
+				<img class="logo" src="https://www.in-touch.ru/img/logo.png" alt="logo">
+				<img class="right" src="https://www.in-touch.ru/img/phone_icon43.png" alt="tel">
+				</div>
+
+				<ol>
+					<li><a class="active" href="/">1. Автомобиль и водители</a> </li>
+					<li>2. Стоимость</li>
+					<li>3. Оформление</li>
+					<li>4. Оплата и получение</li>
+				</ol>
+
+				<ul>
+					<h2>Рассчитайте полис прямо сейчас!</h2>
+					<li>Быстрое оформление и бесплатная доставка</li>
+					<li>Быстрая и удобная процедура урегулирования убытков</li>
+					<li>Круглосуточная поддержка</li>
+				</ul>
+
+			</header>
+			<?php
+			echo (";lksjdfg;lskdfjg");
+			?>
+
+				<form name="forma" method="post" action="pochta.php">					
+					<div class="first">
+						<h2>Виды страхования</h2>
+						<ul>
+							<li><input type="checkbox" id="n1" name="KASKO" /><label for="n1"><span></span>КАСКО:</label></li>
+							<li><input type="radio" id="in_1" name="ys_and_ygon" /><label for="in_1"><span></span> Ущерб и угон</lable> </li>
+							<li><input type="radio" id="in_2" name="ys_and_ygon" /><label for="in_2"><span></span> Только ущерб</lable></li>
+							<li><input type="radio" id="in_3" name="ys_and_ygon" /><label for="in_3"><span></span> Только угон </lable></li>
+						
+						</ul>
+						<input type="checkbox" id="n2" name="KASKO" /><label for="n2"><span></span>ОСАГО</label>
+		
+					</div>
+					
+
+					<div class="second">
+						<h4 id="chouse_car">Выберите автомобиль</h4>
+						<h4 id="you_car">Ваш автомобиль</h4>
+
+						 <div id="marka_js"	><input type="text" name="marka" 	 		size="15" readonly ><img src="https://www.in-touch.ru/img/calc_icon_1.png" alt="" onClick="back1();"></div>
+						 <div id="god_js" 	><input type="text" name="god" 				size="4"  readonly ><img src="https://www.in-touch.ru/img/calc_icon_1.png" alt="" onClick="back2();"></div>
+						 <div id="model_js"	><input type="text" name="model" 	  		size="10" readonly ><img src="https://www.in-touch.ru/img/calc_icon_1.png" alt="" onClick="back3();"></div>
+						 <div id="kupe_js" 	><input type="text" name="kupe" 			size="15" readonly ><img src="https://www.in-touch.ru/img/calc_icon_1.png" alt="" onClick="back4();"></div>
+						 <div id="dvs_js"	><input type="text" name="dvs" 				size="12" readonly ><img src="https://www.in-touch.ru/img/calc_icon_1.png" alt="" onClick="back5();"></div>
+						 <div id="kpp_js" 	><input type="text" name="kpp"   			size="10" readonly ><img src="https://www.in-touch.ru/img/calc_icon_1.png" alt="" onClick="back6();"></div>	
+						 
+					
+					<div class="second_wrapper">
+						<div id="all_avto">
+						<ul>
+							<li><b class="minys">A</b><span onClick="a1('Acura');"	 	  	> Acura			</span></li>
+							<li> <span onClick="a1('Alfa Romeo');"	 						>Alfa Romeo		</span></li>
+							<li> <span onClick="a1('Audi');"		  						>Audi			</span></li>
+							<li><b class="minys">B</b><span onClick="a1('BMW');"			> BMW			</span></li>
+							<li> <span onClick="a1('BYD');"	  		  						>BYD			</span></li>
+							<li><b class="minys">C</b><span onClick="a1('Cadillac');"	  	> Cadillac		</span></li>
+							<li> <span onClick="a1('Chery');"	  	  						>Chery			</span></li>
+							<li> <span onClick="a1('Chevrolet');"	  						>Chevrolet		</span></li>
+							<li> <span onClick="a1('Citroen');"		  						>Citroen		</span></li>
+						</ul>
+
+						<ul>
+							<li><b class="minys">D</b><span onClick="a1('Daewoo');"	 	  > Daewoo		</span></li>
+							<li> <span onClick="a1('Dodge');"		  > Dodge		</span></li>
+							<li><b class="minys">F</b><span onClick="a1('Fiat');"		  >  Fiat		</span></li>
+							<li> <span onClick="a1('Ford');"		  > Ford		</span></li>
+							<li><b class="minys">G</b><span onClick="a1('Geely');"	  	  >Geely		</span></li>
+							<li> <span onClick="a1('Great Wall');" 	  > Great Wall	</span></li>
+							<li><b class="minys">H</b><span onClick="a1('Honda');"	  	  > Honda		</span></li>
+							<li> <span onClick="a1('Hyundai');"	 	  > Hyundai		</span></li>
+							<li><b class="minys">I</b><span onClick="a1('Infiniti');"	  >    Infiniti	</span></li>
+						</ul>
+
+						<ul>
+							<li><b class="minys">J</b><span onClick="a1('Jeep');"	 	  > Jeep		</span></li>
+							<li><b class="minys">K</b><span onClick="a1('Kia');"		 	  > Kia			</span></li>
+							<li><b class="minys">L</b><span onClick="a1('Land Rover');"	  > Land Rover	</span></li>
+							<li> <span onClick="a1('Lexus');"	 	  > Lexus		</span></li>
+							<li> <span onClick="a1('Lifan');"		  > Lifan		</span></li>
+							<li><b class="minys">M</b><span onClick="a1('Mazda');"	 	  > Mazda		</span></li>
+							<li> <span onClick="a1('Mercedes-Benz');"  > Mercedes-Benz</span></li>
+							<li> <span onClick="a1('Mini');"		  > Mini		</span></li>
+							<li> <span onClick="a1('Mitsubishi');" 	  > Mitsubishi	</span></li>					
+						</ul>
+
+						<ul>
+							<li><b class="minys">N</b><span onClick="a1('Nissan');"	 	  	> Nissan		</span></li>
+							<li><b class="minys">O</b><span onClick="a1('Opel');"		  	> Opel		</span></li>
+							<li><b class="minys">P</b><span onClick="a1('Peugeot');"		> Peugeot		</span></li>
+							<li><b class="minys">R</b><span onClick="a1('Renault');"		> Renault		</span></li>
+							<li><b class="minys">S</b><span onClick="a1('Saab');"	  	  	> Saab		</span></li>
+							<li> <span onClick="a1('SEAT');"	 	  > SEAT		</span></li>
+							<li> <span onClick="a1('Skoda');"	  	  > Skoda		</span></li>
+							<li> <span onClick="a1('Smart');"		  > Smart		</span></li>
+							<li> <span onClick="a1('Ssang Yong');"	  > Ssang Yong	</span></li>
+						</ul>
+
+						<ul>
+							<li> <span onClick="a1('Subaru');"	 	  > Subaru		</span></li>
+							<li> <span onClick="a1('Suzuki');"		  > Suzuki		</span></li>
+							<li><b class="minys">T</b><span onClick="a1('Toyota');"		  > Toyota		</span></li>
+							<li><b class="minys">V</b><span onClick="a1('Volkswagen');"	  > Volkswagen	</span></li>
+							<li> <span onClick="a1('Volvo');"		  > Volvo		</span></li>
+							<li> <span onClick="a1('ВАЗ');"	 	 	  > ВАЗ			</span></li>
+							<li> <span onClick="a1('ГАЗ');"	  	 	  > ГАЗ			</span></li>
+							<li> <span onClick="a1('ТагАЗ');"		  > ТагАЗ		</span></li>
+							<li> <span onClick="a1('УАЗ');"		 	  > УАЗ			</span></li>					
+						</ul>
+					
+						</div>
+						
+
+						<div id="god_avto">
+						<ul>
+							<li> <span onClick="g2('2015 г.');"	 >2015 г.	</span></li>
+							<li> <span onClick="g2('2014 г.');"	 >2014 г.	</span></li>
+							<li> <span onClick="g2('2013 г.');"	 >2013 г.	</span></li>
+						</ul>
+						<ul>
+							<li> <span onClick="g2('2012 г.');"	 >2012 г.	</span></li>
+							<li> <span onClick="g2('2011 г.');"	 >2011 г.	</span></li>
+							<li> <span onClick="g2('2010 г.');"	 >2010 г. 	</span></li>
+						</ul>
+						<ul>
+							<li> <span onClick="g2('2009 г.');"	 >2009 г.	</span></li>
+							<li> <span onClick="g2('2008 г.');"	 >2008 г.	</span></li>
+							<li> <span onClick="g2('2007 г.');"	 >2007 г.	</span></li>
+						</ul>
+						<ul>
+							<li> <span onClick="g2('2006 г.');"	 >2006 г.	</span></li>
+							<li> <span onClick="g2('2005 г.');"	 >2005 г.	</span></li>
+							<li> <span onClick="g2('2004 г.');"	 >2004 г.	</span></li>
+						</ul>
+						</div>
+
+						<div id="model_avto">
+						<ul>
+							<li> <span onClick="mode_l('Giulietta');"	 >Giulietta	</span></li>
+							<li> <span onClick="mode_l('MiTo');"	 >MiTo	</span></li>
+							<li> <span onClick="mode_l('GT');"	 >GT	</span></li>
+						</ul>
+						<ul>
+							<li> <span onClick="mode_l('147');"	 >147	</span></li>
+							<li> <span onClick="mode_l('159');"	 >159	</span></li>
+							<li> <span onClick="mode_l('Brera');"	 >Brera 	</span></li>
+						</ul>
+						
+						</div>
+
+						<div id="kupe_avto">
+						<ul>
+							<li> <span onClick="kup_e('Хэтчбек, 3 дв.');"	 >Хэтчбек, 3 дв.	</span></li>
+							<li> <span onClick="kup_e('Хэтчбек, 5 дв.');"	 >Хэтчбек, 5 дв.	</span></li>
+							<li> <span onClick="kup_e('Купе, 2 дв.');"		 >Купе, 2 дв.		</span></li>
+						</ul>
+						<ul>
+							<li> <span onClick="kup_e('Седан, 4 дв.');"	 >Седан, 4 дв.			</span></li>
+							<li> <span onClick="kup_e('Универсал, 5 дв.');" >Универсал, 5 дв.	</span></li>
+						</ul>
+						
+						</div>
+
+						<div id="dvs_avto">
+						<ul>
+							<li> <span onClick="dv_s('1.6 л. (120 л.с.)');"	 >1.6 л. (120 л.с.)	</span></li>
+							<li> <span onClick="dv_s('1.9 л. (84 л.с.)');"	 >1.9 л. (84 л.с.)	</span></li>
+							<li> <span onClick="dv_s('2.5 л. (130 л.с.)');"	 >2.5 л. (130 л.с.)		</span></li>
+						</ul>
+						<ul>
+							<li> <span onClick="dv_s('1.6 л. (102 л.с.)');"	 >1.6 л. (102 л.с.)			</span></li>
+							<li> <span onClick="dv_s('2.5 л. (150 л.с.)');" >2.5 л. (150 л.с.)	</span></li>
+						</ul>
+						
+						</div>
+
+						<div id="kpp_avto">
+						<ul>
+							<li> <span onClick="kp_p('Механика');"	 >Механика</span></li>							
+						</ul>
+						<ul>
+							<li> <span onClick="kp_p('Автомат');"	 >Автомат		</span></li>							
+						</ul>
+						
+						</div>
+
+					</div>
+				</div>
+
+				<div id="about_car">
+						<h4>Описание автомобиля</h4>
+					<div>
+							<div class="d_left"></div>
+								<div><input type="checkbox" id="dille_r" name="diller" /><label for="dille_r"><span></span>Автомобиль новый и находится в салоне у дилера</label></div>
+						</div>
+
+						<div>
+							<div class="d_left">Стоимость&nbsp;автомобиля:</div>
+								<div class="input"><input type="text" size="30" placeholder="850 000">руб.<p>(должна быть в диапазоне от 813 600 до 1 118 700 руб.)</p></div>
+						</div>
+
+						<div>
+							<div class="d_left">Спутниковая&nbsp;система:</div>
+								<div>
+									<ul>
+									<li><input type="radio" id="gps_1" name="gprs" onClick="gps_js('ok')"/><label for="gps_1"><span></span> Есть</lable> </li>
+									<li><input type="radio" id="gps_2" name="gprs" onClick="gps_js('none')"/><label for="gps_2"><span></span> Нет</lable></li>
+									<li><input type="radio" id="gps_3" name="gprs" onClick="gps_js('ok')"/><label for="gps_3"><span></span> Установят в течение 30 дней </lable></li>
+									</ul>
+								</div>
+						</div>
+
+						<div id="gps">
+							<div class="d_left">Тип:</div>
+								<div><select name="typegps" id="" size="1" form="forma">
+									<option value="">Не выбранно</option>
+									<option value="">Спрут</option>
+									<option value="">Золотой Глаз</option>
+									<option value="">Спутник авто</option>
+									<option value="">Легион</option>
+									<option value="">Андромеда</option>
+								</select></div>
+						</div>
+
+						<div>
+							<div class="d_left">Автозапуск:</div>
+								<div>Нет <p>(для расчета с системой автозапуска позвоните нам по телефону 8 (800) 444-4444)</p></div>
+						</div>
+
+						<div>
+							<div class="d_left">Город регистрации собственника:</div>
+								<div class="input"><input type="text" size="30" placeholder=""><p>например, "Москва" или "Раменское" </p></div>
+						</div>
+
+						<div>
+							<div class="d_left"><p>&nbsp;</p></div>
+								<div><p>Просим обратить внимание, что купить полис можно только на территории Москвы, МО</br> Санкт-Петербурга и Ленинградской области.</p> </div>
+						</div>
+					</div>
+
+					<div id="drivers">
+						<h4>Водители</h4>
+						<div>
+							<div class="d_left">Сколько водителей:</div>
+							<div><select name="kol_drivers" id="kol_dr" size="1" form="forma"  onchange="kol_drivers_js();" >
+									<option value="1" > 1 водитель</option>
+									<option value="2" > 2 водителя</option>
+									<option value="3" > 3 водителя</option>
+									<option value="4" > 4 водителя</option>
+									<option value="5" > 5 водителей</option>
+									<option value="6" > Без ограничений</option>
+								</select></div>
+								 <div></div>
+						</div>
+
+						<div id="drivers_1">
+							<div class="d_right"><h1>1</h1><span>Основной<br/> водитель</span></div>
+							<div><p>Дата рождения:</p><input type="text"  ></div>
+							<div><p>Дата выдачи первого в/у:</p><input type="text" ></div>
+						</div>
+
+						<div id="drivers_2">
+							<div class="d_right"><h1>2</h1></div>
+							<div><p>Дата рождения:</p><input type="text" ></div>
+							<div><p>Дата выдачи первого в/у:</p><input type="text" ></div>
+						</div>
+
+						<div id="drivers_3">
+							<div class="d_right"><h1>3</h1></div>
+							<div><p>Дата рождения:</p><input type="text" ></div>
+							<div><p>Дата выдачи первого в/у:</p><input type="text" ></div>
+						</div>
+
+						<div id="drivers_4">
+							<div class="d_right"><h1>4</h1></div>
+							<div><p>Дата рождения:</p><input type="text" ></div>
+							<div><p>Дата выдачи первого в/у:</p><input type="text" ></div>
+						</div>
+
+						<div id="drivers_5">
+							<div class="d_right"><h1>5</h1></div>
+							<div><p>Дата рождения:</p><input type="text" ></div>
+							<div><p>Дата выдачи первого в/у:</p><input type="text" ></div>
+						</div>
+
+						<div id="married">
+							<div class="d_left">Семейное положение основного водителя:</div>
+							<div><select name="sem_drivers" id="" size="1" form="forma">
+									<option value="none"> ----------</option>
+									<option value="Женат"> Женат</option>
+									<option value="Неженат"> Неженат</option>
+									<option value="Разведен"> Разведен</option>
+									<option value="Вдова"> Вдова</option>
+									<option value="Гражданский брак"> Гражданский брак</option>
+								</select></div>
+								 <div></div>
+						</div>
+					</div>
+
+					<div id="cont_info">
+						<h4>Контактная информация</h4>
+						<p><span>При покупке онлайн скидка <b>5%</b> на КАСКО и <b>15%</b> на КАСКО в пакете с ОСАГО за верную контактную информацию!</span></p>
+
+						<div>
+							<div class="d_left">Ваше имя:</div>
+								<div class="input"><input type="text" size="55" placeholder=""></div>
+						</div>
+						<div>
+							<div class="d_left">Телефон:</div>
+								<div class="input"><input type="text" size="30" placeholder=""></div>
+						</div>
+						<div>
+							<div class="d_left">E-mail:</div>
+								<div class="input"><input type="text" size="30" placeholder=""><p>необязательное поле</p></div>
+						</div>
+
+						<div>
+						<div class="d_left"></div>
+								<div><input type="checkbox" id="akcep_t" name="akcept" /><label for="akcep_t"><span></span>Я ознакомлен с <a href="#">правилами расчета КАСКО и ОСАГО on-line</a> и<br/> я даю согласие на <a href="#">обработку персональных данных</a></label></div>
+						</div>
+
+					</div>
+
+
+				</div>
+
+				<hr>
+				<p class="button">
+				<input type="submit" value="рассчитать полис"  id="sublime_form" name="submitform" />
+				</p>
+				<p class="footer">Расчет страхового тарифа производится в соответствии с действующей «Методикой расчета, расчетом страховых тарифов и структурой тарифных ставок по добровольному комбинированному страхованию транспортных средств и сопутствующих рисков». </p>
+				</forma>
+		</body>
+
+
+</html>

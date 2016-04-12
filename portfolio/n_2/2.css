@@ -1,0 +1,330 @@
+*{
+	padding: 0;
+	margin: 0;
+	transition: 1s;
+}
+ body{
+ 	background: #dadfeb;
+ }
+ /*BEGIN---HEADER ----*/
+.header_all{
+	width: 100%;
+	height: 91px;
+	background: url("img/header.jpg") repeat-x;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 3px 3px 3px black;
+}
+.header_pad{
+	padding: 17px 5px;
+}
+.header_pad ul li{
+	list-style: none;
+	float:left;
+}
+.header_pad img{
+	float:left;
+}
+.header_pad a{
+	text-decoration: none;
+	vertical-align: center;
+	font:1.3em bold arial;
+	color: #2F57A1;
+	margin: 0 0 0 1em;
+}
+.header_pad a:hover{
+	color:black;
+	text-shadow: 0 0 3px white;
+}
+/*.header_pad .active a:hover{
+	text-decoration:none;
+
+}*/
+.header_list ul{
+	float:right;
+}
+.active {
+    background: white none repeat scroll 0 0;
+    border: 1px solid black;
+    border-radius: 1em;
+    box-shadow: 0 1px 1px #000;
+   
+    padding: 1px 13px;
+}
+/*END---HEADER ----*/
+
+/*ВЫРАВНИВАЕМ ВСЕ БЛОКИ ПО ЦЕНТРУ*/
+.header_center,.bord{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+	
+}
+.content,.after_content{
+	width: 1006px;/*увеличиваем для того что бы влазило с отступами*/
+	margin: auto;
+}
+
+/*BEGIN---ТОЧКИ ПОД КОНИТОРАМИ---*/
+.points{
+	width: 122px;
+	margin: -41px auto 0;	
+}
+.points a{
+	display:inline-block;
+	margin-left: 15px;
+	width: 16px;
+	height: 20px;
+	background: url('img/not_activ_point.png');
+}
+.points a:first-child{
+	margin-left: 0;
+}
+/*END---ТОЧКИ ПОД МОНИТОРОМ---*/
+
+/*BEGIN---ПРЕВЬЮ---*/
+.priwey{
+	width: 100%;
+	height: 500px;
+	background: url("img/priwey.jpg") repeat-x;
+}
+.priwey>img{
+	display:block;
+	margin:0 auto;
+}
+/*END---ПРЕВЬЮ---*/
+
+
+/*BEGIN---BORD БЛОК ПОД ПРЕВЬЮ---*/
+.bord{
+	background: url("img/bord.jpg");
+	height: 136px;
+}
+.bord p{
+	font:36px bold arial;
+	color: #132445;
+	width: 580px;
+	padding-top: 19px;
+	float: left;
+}
+/*END---BORD БЛОК ПОД ПРЕВЬЮ---*/
+
+/*BEGIN---ССЫЛКА В BORD---*/
+.botton {
+    background: rgba(0, 0, 0, 0) url("img/batton.png") repeat scroll 0 0;
+    border: 4px solid #fff;
+    border-radius: 14px;
+    color: #edf1fc;
+    display: block;
+    float: right;
+    font: 1.4em normal arial;
+    height: 2.97em;
+    margin-top: 17px;
+    overflow: hidden;
+    padding-left: 81px;
+    padding-top: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    width: 11em;
+}
+
+.botton a span{
+	font:27px normal arial;
+}
+.text a:hover{
+	color:black;
+	border: 4px solid black;
+}
+/*END---ССЫЛКА В BORD---*/
+
+
+/*BEGIN---БЛОКИ В КОНТЕНТЕ ---*/
+.block{
+	width: 181px;
+	padding: 20px;
+	margin: 20px 14px 0 14px;
+	background: #fff;
+	float: left;
+	border-radius: 3px;
+	box-shadow: 0 0 3px #bfc4d1;
+	position: relative;
+}
+.block img{
+	padding: 4px;
+	border: 1px solid #cdcdcd;
+	margin-bottom: 4px;
+}
+/*END---БЛОКИ В КОНТЕНТЕ ---*/
+
+/*BEGIN---ССЫЛКИ В КОНТЕНТЕ---*/
+.block a{	
+	border: 1px solid #C6CCDC;
+	border-radius: 11px;
+	background: #E6E7EC;
+	text-align: right;
+	padding: 1px 13px;
+	text-decoration: none;
+	margin-top: 12px;
+	float: right;
+	box-shadow:0 2px 3px #000;
+	color: #2945C0;
+}
+
+.block a:hover{
+	border: 1px solid black;
+	color:black;
+}
+/*END---ССЫЛКИ В КОНТЕНТЕ---*/
+
+/*BEGIN---ПОСЛЕ КОНТЕНТА---*/
+/*общий блок для всего "после контена"*/
+.after_content{
+	color: #132445;
+	overflow: hidden;
+}
+
+	/*BEGIN---четыре маленьких блока внизу---*/
+.all_block_4{
+	overflow: hidden;
+	width: 50%;
+	float:left;	
+}
+.block_4{
+	width: 219px;
+	margin: 20px 14px;
+	float: left;
+}
+.block_4 h3 img{
+	display:inline;
+}
+.block_4 h3{
+	line-height: 25px;
+}
+	/*END---четыре маленьких блока внизу---*/
+	
+	/*BEGIN---описание снизу---*/
+.content_2{
+	margin-left:50%;
+	margin: 20px 14px;
+	overflow: hidden;
+	padding: 0 10px 20px;
+}
+.content_2 p{
+	margin-top:25px;
+	line-height: 26px;
+}
+	/*END---описание снизу---*/
+
+/*END---ПОСЛЕ КОНТЕНТА---*/
+
+/*BEGIN---FOOTER---*/
+
+.footer_bg{
+	min-height: 150px;
+	border-top: 1px solid #fff;
+	clear: both;
+	background: #565f81;
+}
+.footer{
+	width: 978px;
+	margin:auto;
+	padding: 21px 0; 
+}
+.footer div{
+	float:left;
+}
+
+	/*BEGIN---FOOTER_LEFT---*/
+.footer_left{
+	width: 50%;
+	color:#9fa8bd;		
+}
+.footer_left ul{
+	margin: 0;
+	padding-bottom: 30px;
+}
+.footer_left .spis a{
+	color:#9fa8bd;
+}
+.footer_left .spis a:hover{
+	text-decoration: underline;
+}
+.footer_left .spis li{
+	border-color:#9fa8bd;
+}
+.footer_left p a{
+	text-decoration: underline;
+}
+.footer_left li{
+	float: left;
+	list-style-type: none;
+	border-left: 1px solid #c8cedd;
+	padding: 0 10px;
+}
+
+.footer_left a{	
+	text-decoration: none;
+	color:#c8cedd;
+}
+.footer_left a:hover{
+	text-decoration: underline;
+}
+.footer_left li:first-child{
+	padding: 0 10px 0 0;
+	border: none;
+}
+	/*END---FOOTER_LEFT---*/
+
+	/*BEGIN---FOOTER_RIGHT---*/
+.footer_right {
+    color: #c8cedd;
+    
+    margin-top: 1.8em;
+    
+    text-align: right;
+    width: 50%;
+}
+.footer_right span {
+    display: block;
+    float: left;
+    margin-top: 0.34em;
+    width: 59%;
+}
+
+.footer_right a{
+	display:inline-block;
+	margin-left:12px;
+	position:relative;
+	
+}
+.footer_right a:hover{
+	bottom:2px;
+}
+.wrapper{
+	position: relative;
+	width: 960px;
+	margin:0 auto;
+	overflow: hidden;
+	padding-top:2em;
+}
+#pik_1,
+#pik_2,
+#pik_3,
+#pik_4{
+	display:inline-block;	
+	width: 100%;
+	text-align: center;
+	visibility: hidden;
+	
+}
+
+
+#pik_2{
+	margin-top: -375px;
+}
+#pik_3{
+	margin-top: -750px;
+}
+#pik_4{
+	margin-top: -1125px;
+}

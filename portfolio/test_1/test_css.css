@@ -1,0 +1,430 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+
+	background:url("https://www.in-touch.ru/img/fon_1.png");
+	color:#565a5c;
+	/*font-family: 'Officina Serif Book','Open Sans',sans-serif;*/
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:100%;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800&subset=latin,cyrillic);
+
+/*------------------------------------BEGIN HEADER------------------------------*/
+header,form{
+	
+	margin: 0 auto;
+	max-width: 895px;
+	min-width:320px;
+	width: 93%;
+}
+
+.head_wrapper{
+	width: 100%;
+	vertical-align: top;
+	text-align:justify;	
+	padding: 2.5em 0;
+}
+
+.head_wrapper:after{
+	content:'';
+	display:inline-block;
+	height: 0;
+	width: 100%;
+	visibility: hidden;
+}
+.head_wrapper img{
+	vertical-align: top;
+	line-height: 100px;
+}
+img .right{
+	text-align: right;
+}
+
+
+header ol li{
+	display:inline-block;
+	margin-right:2.875em;
+	list-style-position: inside;
+}
+header ol {
+	border-bottom: 3px solid #e6e6e6;
+	display:block;
+	font-weight: 700;
+	list-style-type: decimal;
+	position:relative;
+	padding-bottom:0.6875em;
+	font-size: 1.125em;	
+}
+
+header a.active{
+	text-decoration:none;
+	color: #53af31;
+ }
+
+
+header ul{
+	background: #fff;
+	border-radius:9px;
+	box-shadow:0 0 11px 0 #ecebeb;
+	list-style-position: inside;
+	margin:1.8em 0;
+	padding: 1.875em 3.125em;
+	font-weight: bold;
+	list-style-image: url('https://www.in-touch.ru/img/v.png')
+}
+header ul li{
+	font-family: verdana;
+	font-size: 0.875em;
+	font-weight: normal;
+	padding: 0 0 0.6em;	
+}
+
+h2{
+	font-size: 1.5em ;
+	font-weight: bold;
+	margin-bottom: 1em;
+	
+}
+h4 {
+	font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    font-family: "Open Sans Condensed",sans-serif;
+}
+
+/*------------------------------------END HEADER------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------------------------BEGIN FIRST----------------------------------------------------------*/
+.first{
+	background: #fff;
+	border-radius:9px;
+	box-shadow:0 0 11px 0 #ecebeb;
+	padding: 1.875em 3.125em;
+}
+
+.first h2{
+	letter-spacing: 0;
+}
+
+.first ul,#about_car ul{
+	list-style: none;
+	padding-bottom:1.4em;
+	font:normal 0.875em verdana;
+}
+.first ul li, #about_car ul li{
+	display:inline-block;
+}
+label{
+	margin:.5em .8em .5em 0;
+	font:normal 14px verdana;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------BEGIN INPUT------------------------------------------------*/
+
+
+
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    background:url(https://www.in-touch.ru/calc_files/iCheck/square/green.png) left top no-repeat;
+    cursor:pointer;
+    display:inline-block;
+    height:20px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    width:20px;
+}
+input[type="checkbox"]:hover + label span {
+    background:url(https://www.in-touch.ru/calc_files/iCheck/square/green.png) -20px top no-repeat;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(https://www.in-touch.ru/calc_files/iCheck/square/green.png) -40px top no-repeat;
+}
+
+
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label span {
+    background:url(https://www.in-touch.ru/calc_files/iCheck/square/green.png) -100px top no-repeat;
+    cursor:pointer;
+    display:inline-block;
+    height:20px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    width:20px;
+}
+label:hover{
+	cursor:pointer;
+}
+input[type="radio"]:hover + label span {
+    background:url(https://www.in-touch.ru/calc_files/iCheck/square/green.png) -120px top no-repeat;
+}
+input[type="radio"]:checked + label span {
+    background:url(https://www.in-touch.ru/calc_files/iCheck/square/green.png) -140px top no-repeat;
+}
+/*-----------------------------------------------------------------------------------------------------------------END INPUT------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------- END FIRST----------------------------------------------------------*/
+
+
+
+.second,#about_car, #drivers,#cont_info{
+	background: #fff;
+	border-radius:9px;
+	box-shadow:0 0 11px 0 #ecebeb;
+	margin: 1.8em 0;
+    padding: 1.875em 3.125em;
+	font-family: verdana;
+}
+.second h4{
+	font:bold 0.875em verdana;
+}
+
+.second_wrapper{
+	width: 100%;
+	position:relative;
+	
+}
+.second_wrapper span{
+	text-decoration: underline;
+	text-decoration-style: dashed;
+	color:#34b233;
+}
+
+.second_wrapper span:hover{
+	cursor:pointer;
+	color:gray;
+}
+
+input[type='text']{
+	border:none
+}
+
+
+.second div[id$="js"]{
+	visibility: hidden;
+	display:none;
+	padding:3px 4px;
+	border:2px solid #999;
+	border-radius:3px;
+}
+.second div[id$="js"] img:hover{
+	cursor:pointer;
+}
+
+/*------------------------------------------BEGIN ALL_AVTO---------------------------*/
+#all_avto{
+	text-align: justify;
+	/*position:absolute;*/
+	/*top:0;
+	left:0;
+	bottom:0;
+	right:0;*/
+}
+#all_avto p,#god_avto p,#model_avto p,#kupe_avto p,#dvs_avto p,#kpp_avto p{
+	text-align: right;
+}
+
+
+#all_avto ul,#god_avto ul,#model_avto ul,#kupe_avto ul,#dvs_avto ul,#kpp_avto ul{
+	margin: 2em 0;
+	display:inline-block;
+	list-style: none;
+	font-size: 0.875em;
+	vertical-align: top;
+}
+#all_avto ul li,#god_avto ul li,#model_avto ul li,#kupe_avto ul li,#dvs_avto ul li,#kpp_avto ul li {
+	padding:.5em 1em;
+	position:relative;
+}
+
+
+#all_avto .minys{
+	position:absolute;
+	top:.5em;
+	left:-.5em;
+	font-weight:normal;
+	text-transform:uppercase;	
+}
+
+#all_avto:after,#god_avto:after,#model_avto:after,#kupe_avto:after,#dvs_avto:after,#kpp_avto:after{
+	content:'Не нашли автомобиля? Пожалуйста, позвоните нам 8 (800) 444-4444 (звонок бесплатный).';
+	text-align:right;
+	display:inline-block;
+	height: 0;
+	width: 100%;
+	font-size:0.875em;
+	
+}
+/*------------------------------------------END ALL_AVTO---------------------------*/
+#god_avto,#model_avto,#kupe_avto,#dvs_avto,#kpp_avto{
+	display:none;
+}
+#god_avto ul li,#model_avto ul li,#kupe_avto ul li,#dvs_avto ul li,#kpp_avto ul li {
+	margin-right: 5em;
+	padding:.5em 1em;
+}
+
+#you_car{
+	display:none;
+}
+
+
+hr{
+	color:transparent;
+	margin:1em 0;
+	height: 0;
+	width: 100%;
+	border-bottom: 3px solid #ccc;
+}
+
+/*--------------------------------------------------------------------------------BEGIN TABLE-------------------------------------------------------------------*/
+table{
+	
+	border:none;
+	text-align:left;
+}
+td{
+	
+}
+
+#about_car div>input[type='text'],#about_car div select,#drivers div select,#drivers div>input[type='text'],#cont_info div>input[type='text']{
+	border: 2px solid #999;
+    border-radius: 3px;
+    padding: 5px 4px;
+	display:inline-block;
+	margin-right:1em;
+	color:#000;
+	vertical-align: top;
+}
+
+
+#about_car>div>div, #drivers>div>div,#cont_info>div>div{
+	vertical-align: top;
+	display:inline-block;
+	padding:.7em 0;
+	
+}
+#about_car div p,#cont_info div p{
+	color:#989898;
+	font-size: 0.75em;
+}
+
+
+.d_left{
+	width: 30%;
+	text-align: right;
+}
+
+.d_right{
+	width: 30%;
+	text-align: left;
+}
+#drivers>div>div{
+	vertical-align: middle;
+	padding: .1em  .7em;
+}
+#drivers>div{
+	margin-bottom:.7em;
+}
+
+#drivers div[id^='dri']{
+	background:#e3e3e3;
+	border-radius: 5px;
+	margin-bottom:.7em;
+}
+#drivers div[id^='dri'] p{
+	font-size:0.75em;
+	padding: .1em 0;
+}
+#drivers div[id^='dri'] h1{
+	font-size: 4.5em;
+	display:inline-block;
+}
+#drivers div[id^='dri'] span{
+	display:inline-block;
+	font-size:1.5em;
+	font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 0.8;
+}
+
+
+
+#cont_info p{
+	margin:1em 0;
+}
+
+#cont_info p>span{
+	font-family: "Open Sans Condensed",sans-serif;
+	font-weight: bold;
+	color:#53af31;
+	font-size:1.125em;
+}
+
+#cont_info a{
+	color:#53af31;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------END TABLE-------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------BEGIN BOTTON FORM SUBLIME---------------------------------------------------------*/
+.button{
+	text-align: center;
+}
+
+
+
+#sublime_form{
+	letter-spacing: -0.05em;
+	border-radius: 8px;
+	border:1px solid #73d54c;
+	box-shadow:0 3px 0 #26670d;
+	color:#fff;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin:0em auto .5em;
+	padding:0.3em 1em;
+	text-align: center;
+	text-transform: uppercase;
+	background:-webkit- linear-gradient(bottom, #55b032 0%, #7bde54 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background:-o- linear-gradient(bottom, #55b032 0%, #7bde54 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background:linear-gradient(to top, #55b032 0%, #7bde54 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background:-moz-linear-gradient(to top, #55b032 0%, #7bde54 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	
+}
+#sublime_form:hover{
+	box-shadow:0  3px 0 #43671f,0 3px 15px #9edd5f;
+}
+
+/*----------------------------------------------------------------------------END BOTTOM FORM SUBLIME---------------------------------------------------------*/
+
+.footer{
+	font-size:0.75em;
+	color:#999;
+	margin-bottom: 3em;
+	text-align: justify;
+	letter-spacing: 0.5;
+}
+
+#cont_info,#drivers,#about_car,#drivers_2,#drivers_3,#drivers_4,#drivers_5,#another,#gps{
+	display:none;
+}
+

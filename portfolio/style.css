@@ -1,0 +1,353 @@
+@import url(http://fonts.googleapis.com/css?family=Magra:400,700);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(http://fonts.googleapis.com/css?family=Neucha);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+@import url(http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Cuprum:400italic,400);
+body {
+    background: #d5ac76 url("img/p_fon.jpg");
+    margin: 1em 1em;
+    overflow-x: hidden;
+}
+/*****************FOR TRANSITION*****************/
+
+a {
+    -moz-transition: color .7s ease;
+    -o-transition: color .7s ease;
+    -webkit-transition: color .7s ease;
+    transition: color .7s ease;
+}
+.in_content * {
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+/*******************FOR TRANSITION END*************                 */
+
+.planshet_border {
+    position: relative;
+    width: 890px;
+    margin: 0 auto;
+    background: url("img/pl/pl_bord_top_l.png") no-repeat top left, url("img/pl/pl_bord_top_r.png") no-repeat top right, url("img/pl/pl_bord_top.png") repeat-x top, url("img/pl/pl_bord_bot_l.png") no-repeat bottom left, url("img/pl/pl_bord_bot_r.png") no-repeat bottom right, url("img/pl/pl_bord_bot.png") repeat-x bottom, url("img/pl/pl_bord_r.png") repeat-y right, url("img/pl/pl_bord_l.png") repeat-y left, url("img/pl/pl_dots.png") repeat-y 2em 5em, url("img/pl/pl_body.png") repeat;
+}
+/*.right_img {
+    background: rgba(0, 0, 0, 0) url("img/pl/coffe.png") repeat scroll 0 0;
+    height: 690px;
+    position: absolute;
+    right: -223px;
+    top: 0;
+    width: 263px;
+}*/
+
+.about a.akor {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+/*********************************BEGIN HEADER*********************************/
+
+.logo {
+    padding-top: 2.285714285714286em;
+}
+.logo span {
+    background: rgba(0, 0, 0, 0) url("img/bg_logo.png") no-repeat scroll center center / contain;
+    font-family: "Magra", sans-serif;
+    font-size: 44px;
+    font-weight: bold;
+    letter-spacing: -1.2px;
+    margin-left: 66px;
+    padding: 0 14px 5px;
+    text-transform: uppercase;
+}
+ul {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 1.2em;
+    padding-top: 34px;
+    padding-left: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: -2em;
+}
+ul li {
+    display: inline-block;
+}
+ul li a:hover {
+    background: url("img/active.png") no-repeat bottom center;
+}
+ul li a {
+    display: block;
+    color: #a7262c;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+.about a {
+    color: gray;
+}
+ul li a:hover,
+.about a:hover {
+    text-decoration: none;
+    color: black;
+}
+/*************************************************END HEADER*********************************/
+/**************************************************BEGIN ABOUT ME******************************/
+
+.about {
+    background: url("img/bg_slach_1.png") no-repeat center bottom;
+    padding: 0 3em 2em 4.5em;
+}
+.about p,
+.after p {
+    line-height: 1.285714285714286em;
+    text-indent: 1em;
+    margin: 1.285714285714286em 0;
+}
+.after p {
+    text-indent: 0em;
+    margin-top: unset;
+}
+#first {
+    margin-top: 2em;
+}
+.about p a {
+    font-weight: bold;
+    color: darkblue;
+}
+.about p a:hover {
+    text-decoration: underline;
+}
+.about h2 {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 1.8em;
+    padding-top: 31px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 0.33em;
+}
+.about .row a {
+    height: 3em;
+    display: block;
+    text-decoration: none;
+    font-size: 1.15em;
+    font-weight: bold;
+    line-height: 3em;
+    margin-top: .55em;
+}
+.twit {
+    background: url("img/logo_twit.png") right center no-repeat;
+}
+.face {
+    background: url("img/logo_face.png") right center no-repeat;
+}
+.vk {
+    background: url("img/logo_gogl.png") right center no-repeat;
+}
+/**********************************************END ABOUT*********************/
+/************************************************BEGIN Portfolio*****************/
+
+.portfolio {
+    background: url("img/bg_slach_2.png") no-repeat center bottom;
+    padding-bottom: 3em;
+}
+.portfolio h2 {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: .6em 3em .33em 2.5em;
+}
+/***************************************************EnD PORTFOLIO************/
+/*****************************************************BEGIN SLIDER**********/
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+.inner {
+    height: 320px;
+    position: relative;
+}
+.slider img {
+    -webkit-transition: all .5s eas-in-out 1s;
+    -o-transition: all .5s eas-in-out 1s;
+    -moz-transition: all .5s eas-in-out 1s;
+    display: block;
+    margin: 1em auto;
+    padding: .1em;
+    background: #fff;
+    border: 3px solid gray;
+}
+.slider img:hover {
+    border: 3px solid black;
+    -moz-box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
+    -o-box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
+    -webkit-box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
+    box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
+}
+button {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    height: 100%;
+    width: 4%;
+}
+.b_right {
+    background: url("img/slider/l.png") center center no-repeat;
+}
+.b_right:hover {
+    background: url("img/slider/l_h.png") center center no-repeat;
+}
+.b_left {
+    visibility: hidden;
+    background: url("img/slider/r.png") center center no-repeat;
+}
+.b_left:hover {
+    background: url("img/slider/r_h.png") center center no-repeat;
+}
+.in_content {
+    height: 100%;
+    width: 90%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.in_content>div {
+    margin: 0 auto;
+    position: absolute;
+}
+#box1 {
+    top: 0;
+    left: 40px;
+    width: 90%;
+}
+#box2 {
+    visibility: hidden;
+    top: 0;
+    left: 1000px;
+    width: 90%;
+}
+#box3 {
+    visibility: hidden;
+    top: 0;
+    left: -1000px;
+    width: 90%;
+}
+/******************************************************END SLIDER************/
+/**************************************************BEGIN AFTER**************/
+
+.after {
+    padding: 0 3em 2em 3.5em;
+    min-height: 200px;
+}
+.after h2 {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 1.8em;
+    padding-top: 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 0.33em;
+}
+.after img {
+    display: block;
+    margin: 0 auto;
+}
+.after h3,
+.after h4 {
+    text-align: center;
+    font-weight: bold;
+    color: darkred;
+}
+.conactvk {
+    text-align: center;
+}
+.conactvk a {
+    display: inline-block;
+    border: 5px solid #4f7195;
+    border-radius: 3px;
+}
+.conactvk a:hover {
+    -moz-box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
+    -o-box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
+    -webkit-box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
+    box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
+}
+/****************************************************END AFTER*****************/
+/*****************************************************BEGIN FORM*************/
+
+#cerror {
+    height: 6.2em;
+}
+form p {
+    font-weight: bold;
+    margin: .8em 0;
+}
+input[type='submit'] {
+    margin: 1em auto;
+    display: block;
+    border: none;
+    background: url("img/form/bg_form_sub.png") no-repeat center center;
+    height: 35px;
+    width: 159px;
+    font-weight: bold;
+}
+input[type='submit']:hover {
+    text-shadow: 2px 2px 5px #000;
+}
+input[type='text'] {
+    border-width: 0 15px 7px 0;
+    border-color: transparent;
+    border-style: solid;
+    background: transparent;
+    -webkit-border-image: url("img/form/border_input.png") 0 15 7 0 stretch stretch;
+    -o-border-image: url("img/form/border_input.png") 0 15 7 0 stretch stretch;
+    border-image: url("img/form/border_input.png") 0 15 7 0 stretch stretch;
+    moz-border-image: url("img/form/border_input.png") 0 15 7 0 stretch stretch;
+    width: 100%;
+    padding: 0 .5em 0;
+}
+textarea {
+    border-width: 0 15px 7px 0;
+    border-color: transparent;
+    border-style: solid;
+    background: transparent;
+    -webkit-border-image: url("img/form/border.png") 0 15 7 0 stretch stretch;
+    -o-border-image: url("img/form/border.png") 0 15 7 0 stretch stretch;
+    border-image: url("img/form/border.png") 0 15 7 0 stretch stretch;
+    moz-border-image: url("img/form/border.png") 0 15 7 0 stretch stretch;
+    width: 100%;
+    min-height: 150px;
+    padding: 0 .5em 0;
+}
+/******************************************************END FORM********************/
+/*******************************************************BEGIN FOOTER************************/
+
+footer p {
+    color: white;
+    margin: 0 2em;
+    text-align: center;
+    vertical-align: bottom;
+}
+/*******************************************************END FOOTER************************/
+/*******************************************************BEGIN AFTER FORM *************************/
+
+.message {
+    background: #ccc;
+    width: 80%;
+    margin: 1em auto;
+    -webkit-box-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px black;
+    border-radius: .5em;
+    text-align: center;
+}
+.message h1 {
+    color: #f88;
+}
+.message a {
+    text-decoration: none;
+    color: green;
+}
+.b_left {
+    margin-left: 0.2em;
+}

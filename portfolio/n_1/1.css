@@ -1,0 +1,230 @@
+/*Убираем все отступы*/
+
+* {
+    padding: 0;
+    margin: 0;
+     
+}
+body {
+    background-color: #ada6a0;
+    /*задаем фоновый цвет для всей страницы*/
+}
+/*загружаем шрифт Rocwell_regular*/
+
+@font-face {
+    font-family: Rockwell;
+    /*название гарнитуры шрифта*/
+    
+    src: url(font/Rockwell.ttf);
+}
+/*создаем общий слой для всего что будет на странице*/
+
+.all {
+    background: url("img/head.jpg") no-repeat center top #ada6a0;
+    /*добовляем градиенту в верху*/
+    
+    height: 1365px;
+    width: 1024px;
+    margin: 0 auto;
+    /*позиционирем по центру*/
+}
+/*создаем блок для логотипа*/
+
+.header {
+    height: 137px;
+}
+/*сам логотип*/
+.left:hover, .right:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.logo {
+    color: #666666;
+    font: 88.5px bold Rockwell, arial, tahoma;
+    opacity: 0.26;
+    /*добовляем прозрачность	*/
+    
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+/*отступы для всех блоков */
+
+.all>div {
+    margin-left: 47px;
+    margin-right: 47px;
+}
+/*BEGIN--- MENY*/
+
+.meny {
+    height: 55px;
+    background-color: #ffffff;
+}
+.meny ul li {
+    float: left;
+    list-style-type: none;
+    margin-top: 15px;
+}
+.meny a {
+    text-decoration: none;
+    color: #666666;
+    font: 18px bold Rockwell, tahoma;
+    margin-left: 60px;
+}
+.meny a:hover{
+    color:black;
+    border-bottom:1px solid black;
+}
+.meny form {
+    margin: 15px;
+    float: right;
+    height: 28px;
+    border: 1px solid #ececec;
+    position: relative;
+}
+/*BEGIN---- Поле SEARCH*/
+
+input {
+    vertical-align: middle;
+    padding: 0 10px;
+    border: none;
+    color: #666;
+}
+input[type="image"] {
+    margin-top: 4px;
+}
+/*END--- Поле SEARCH*/
+/*END---MENY*/
+/*BEGIN---ПРЕВЬЮ С КАРТИНКОЙ*/
+
+.priwey {
+    background: #FFF;
+    overflow: hidden;
+}
+#left{
+    display:none;
+}
+#background {
+    width: 903px;
+    height: 347px;
+    background: url("img/1.jpg") black;
+    margin: 13px auto;
+}
+/*END---ПРЕВЬЮ С КАРТИНКОЙ*/
+/*BEGIN---СТРЕЛКИ НА КОРТИНКЕ*/
+
+.right {
+    float: right;
+    margin-right: 14px;
+    margin-top: 144px;
+}
+.left {
+    float: left;
+    margin-left: 14px;
+    margin-top: 144px;
+}
+.right,
+.left {
+    width: 43px;
+    height: 49px;
+    opacity: 0.4;
+}
+/*END---СТРЕЛКИ НА КОРТИНКЕ*/
+
+.content,
+.priwey {
+    height: 377px;
+    margin-top: 15px;
+}
+/*BEGIN---CONTENT*/
+
+.content>div {
+    margin-left: 11px;
+    width: 224px;
+    height: 100%;
+    float: left;
+}
+.content>div:first-child {
+    margin-left: 0;
+}
+/*END---CONTENT*/
+/*BEGIN---КОНТЕНТ С ЧЕТЕРЬМЯ БЛОКАМИ*/
+
+.cont {
+    width: 200px;
+    height: 350px;
+    margin: 12px auto;
+    font: 12px normal Rockwell, tahoma;
+}
+.cont img {
+    width: 201px;
+    height: 157px;
+}
+.cont p {
+    margin-top: 11px;
+    line-height: 1.2em;
+    text-indent: 35px;
+}
+/*END---КОНТЕНТ С ЧЕТЕРЬМЯ БЛОКАМИ*/
+
+.cont a,
+.podrobnee a {
+    margin-top: 20px;
+    color: gray;
+    float: right;
+    text-decoration: none;
+}
+.cont a:hover,
+.podrobnee a:hover{
+    color:black;
+    border-bottom:1px solid black;
+}
+/*BEGIN---БЛОК С ПОДРОБНЫМ ОПИСАНИЕМ ПОСЛЕ 4-Х*/
+
+.podrobnee {
+    height: 187px;
+    margin-top: 16px;
+}
+.podrobnee div {
+    padding-top: 10px;
+    margin: 10px auto;
+    width: 903px;
+    height: 166px;
+}
+.podrobnee img {
+    width: 215px;
+    height: 166px;
+    float: left;
+    margin-right: 15px;
+}
+.podrobnee p {
+    line-height: 1.2em;
+    text-indent: 35px;
+    font: 12px normal Rockwell, tahoma;
+}
+/*END---БЛОК С ПОДРОБНЫМ ОПИСАНИЕМ ПОСЛЕ 4-Х*/
+/*BEGIN---FOOTER*/
+
+.footer {
+    height: 55px;
+    margin-top: 15px;
+}
+.footer ul li {
+    float: left;
+    list-style-type: none;
+    margin-top: 15px;
+    margin-left: 20px;
+    font: 14px normal Calibri, tahoma;
+}
+/*END---FOOTER*/
+/*Добовляем тень всем элементам и фоновый цвет*/
+
+.footer,
+.podrobnee,
+.content>div,
+.priwey,
+.meny {
+    box-shadow: 0 0 3px black;
+    background-color: #FFF;
+}

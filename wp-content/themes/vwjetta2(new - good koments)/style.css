@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    transition: all 0.5s ease-out;
+}
+body {
+    background: gray url(img_fon/grey_wash_wall.png);
+    color: whitesmoke;
+    font: 14px/20px normal serif, tahoma;
+    min-width: 1000px;
+    padding: 10px 2%;
+    max-width: 1800px;
+}
+/*---------------------------------------------------------- BEGIN    TABLE--------------------------------------*/
+
+table .table_1 {
+    background-color: #0270c9;
+    border-collapse: collapse;
+    border-radius: 20px;
+    border: 0px strick black;
+    box-shadow: 0 0 15px #000;
+    margin: 0 2.5%;
+    width: 95%;
+}
+.table_1 td {
+    border: 0px double black;
+    /* Граница вокруг ячеек */
+    
+    padding: 5px;
+    /* ѕоля вокруг содержимого ячеек */
+}
+.table_1 td h1,
+.table_1 th h1 {
+    font-family: "chiller", "Gabriola";
+    text-align: center;
+}
+.table_1 tr {
+    text-align: center;
+}
+.table_1 {
+    background-color: gray;
+    border-collapse: separate;
+    border-radius: 0;
+    border-spacing: 2px;
+    border: 2px solid black;
+    box-shadow: 0 0 0;
+    margin: 0;
+    width: 100%;
+}
+.table_1 td {
+    border: 1px solid silver
+}
+.table_1 tr:hover {
+    color: #eed025;
+    background-color: #262020;
+}
+/*----------------------------------------------------------END TABLE--------------------------------------*/
+
+h2,
+h3,
+h1 {
+    text-align: center;
+}
+h2 {
+    color: whitesmoke;
+    font-size: 2em;
+}
+.entry h2,
+.content h2,
+.content_glav_page h2 {
+    text-shadow: 2px 2px 1px black;
+    line-height: 1em;
+}
+h3 {
+    color: #ccc;
+}
+hr {
+    color: #eed025;
+    margin: 25px 0;
+    text-shadow: 0 2px 1px black;
+}
+a {
+    color: #ed8600;
+    text-decoration: none;
+    line-height: 1.7em;
+}
+a:hover {
+    color: #eed025;
+    text-decoration: none;
+}
+.all {
+    min-height: 90%;
+    margin: 0;
+}
+.red {
+    color: red;
+    font: normal 16px/20px arial, tahoma;
+}
+/*----------------------------------------------------------------BEGIN HEADER--------------------------------------------------*/
+
+.header {
+    background-size: cover;
+    background: url("./img_fon/header.png") center center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    border: 1px solid #eed025;
+    box-shadow: 0 15px 2px -10px #2b2b28;
+    height: 125px;
+    margin: 0 0 20px 0;
+    min-width: 100%;
+    padding-top: 25px;
+    text-align: center;
+}
+.wv {
+    color: #ececed;
+    font: 27pt bold Tahoma, serif;
+    vertical-align: top;
+}
+.g2 {
+    color: #ececed;
+    font: 20pt bold Tahoma, serif;
+}
+/*----------------------------------------------------------------END HEADER--------------------------------------------------*/
+/******************BEGIN SIDEBAR/LIST**************/
+
+.sidebar a:hover {
+    color: #eed025;
+    text-decoration: underline;
+}
+.sidebar a:visited {
+    color: #ccc;
+}
+.sidebar li {
+    color: #ed8600;
+    line-height: 1.7em;
+    text-decoration: none;
+}
+.sidebar {
+    width: 18%;
+    margin-top: 15px;
+    float: left;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li h2,
+.sidebar ul li h3,
+.sidebar label {
+    font-size: 1.2em;
+    background: linear-gradient( 145deg, #eed025 70%, #343131 70%, #343131 75%, #eed025 75%, #eed025 80%, #343131 80%, #343131 85%, #eed025 85%, #eed025 90%, #343131 90%, #343131 95%, #eed025 95%);
+    background: -webkit-linear-gradient( -45deg, #eed025 70%, #343131 70%, #343131 75%, #eed025 75%, #eed025 80%, #343131 80%, #343131 85%, #eed025 85%, #eed025 90%, #343131 90%, #343131 95%, #eed025 95%);
+    background: -moz-linear-gradient( -45deg, #eed025 70%, #343131 70%, #343131 75%, #eed025 75%, #eed025 80%, #343131 80%, #343131 85%, #eed025 85%, #eed025 90%, #343131 90%, #343131 95%, #eed025 95%);
+    background: -ms-linear-gradient( -45deg, #eed025 70%, #343131 70%, #343131 75%, #eed025 75%, #eed025 80%, #343131 80%, #343131 85%, #eed025 85%, #eed025 90%, #343131 90%, #343131 95%, #eed025 95%);
+    background: -o- linear-gradient( -45deg, #eed025 70%, #343131 70%, #343131 75%, #eed025 75%, #eed025 80%, #343131 80%, #343131 85%, #eed025 85%, #eed025 90%, #343131 90%, #343131 95%, #eed025 95%);
+    box-shadow: 2px 2px 2px #000;
+    color: black;
+    padding: 0 5px 0 10px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 95%;
+    overflow: hidden;
+}
+.sidebar ul li div ul {
+    margin: 0;
+}
+.sidebar ul li ul,
+.sidebar ul li form,
+.sidebar ul li div {
+    box-shadow: 2px 2px 2px #000;
+    margin: 0 15px 15px;
+}
+.sidebar li ul,
+.sidebar li form,
+#calendar_wrap,
+.textwidget {
+    background: #343131;
+    border: 1px solid #eed025;
+    border-top: none;
+    list-style: none outside;
+}
+.sidebar .active {
+    background: #000;
+    position: relative;
+}
+.sidebar ul li ul li {
+    color: white;
+    border-bottom: 1px dotted #555252;
+    padding: .25em 1em;
+}
+.sidebar ul li ul li:last-child {
+    border: none;
+}
+.sidebar a {
+    display: block;
+}
+.sidebar li ul li img {
+    width: 100%;
+}
+.sidebar li form input[placeholder] {
+    width: 90%;
+}
+.sidebar li form {
+    padding: .25em 1em;
+}
+#rez_golosovanie {
+    display: none;
+}
+#wp-calendar {
+    width: 90%;
+    margin: auto;
+}
+.textwidget > a {
+    text-align: left;
+    padding: 0.25em 0;
+}
+.textwidget > a[href='http://vwjetta2.ts9.ru/'] {
+    padding-left: 1em;
+}
+.textwidget img[title*='Яндекс'] {
+    margin-left: 1em;
+}
+/***END SIDEBAR/LIST***/
+/*** BEGIN CONTENT_GLAV_PAGE***/
+
+.content_glav_page img {
+    border-radius: 2em;
+    text-align: center;
+    padding: 1em;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+/***END CONTENT_GLAV_PAGE----------------------------------------------*/
+/*------------------------------------------------------BEGIN LAST_NEWS-------------------------------*/
+
+.last_news h3:first-child,
+#reply-title,
+.h2 h3 {
+    background: #eed025;
+    box-shadow: 2px 2px 2px #000;
+    color: black;
+    margin: 0px 0 1em -30px;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+.h2 h3 {
+    margin-top: -40px;
+}
+.last_news div.post {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 4px double #eed025;
+    padding: 30px;
+}
+.last_news div ul {
+    list-style: circle;
+}
+.last_news div h2 {
+    padding: 0 0 1em;
+}
+.last_news .entry>img {
+    float: left;
+    border-radius: 10px;
+    margin: 0 2em 2em 0;
+    width: 20%;
+    height: 20%;
+}
+.entry ul {
+    margin-top: .7em;
+}
+.last_news .read_more {
+    text-align: right;
+}
+.last_news div a {
+    text-transform: uppercase;
+}
+.postmetadata {
+    border-top: 2px dashed gray;
+    clear: both;
+    margin-top: 2.2em;
+    padding-top: 0.5em;
+}
+.read_more a:hover {
+    text-decoration: underline;
+}
+.read_more {
+    margin-top: 1em;
+}
+.last_news hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(238, 308, 37, 0.75), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(238, 308, 37, 0.75), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(238, 308, 37, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(238, 308, 37, 0.75), rgba(0, 0, 0, 0));
+}
+/*------------------------------------------------------END LAST_NEWS-------------------------------*/
+/*------------------------------------------------------BEGIN CONTENT----------------------------------------------------*/
+
+.content,
+.comment,
+.content_glav_page {
+    background: #343131;
+    border: 1px solid #eed025;
+    box-shadow: 2px 2px 2px #000;
+    float: right;
+    margin: 15px 0px 15px 5px;
+    padding: 2.3%;
+    width: 75%;
+    overflow: hidden;
+}
+.last_news {
+    background: #343131;
+    border: 1px solid #eed025;
+    box-shadow: 2px 2px 2px #000;
+    float: right;
+    margin: 15px 0px 15px 5px;
+    width: 79.6%;
+    overflow: hidden;
+}
+.content>div>p>a img,
+.content>div>a img {
+    border-radius: 10px;
+    clear: right;
+    float: left;
+    height: 20%;
+    margin: 5px 15px;
+    width: 20%;
+}
+.content img:hover {
+    position: relative;
+    transform: scale(1.5);
+    z-index: 110;
+}
+.content .right {
+    float: right;
+}
+.content .right:hover {
+    transform: translatex(-80px) scale(1.5);
+}
+.content>div {
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+.content p,
+.postright p {
+    margin-top: 20px;
+}
+.content ul li {
+    margin-left: 25px;
+    list-style: outside;
+}
+/*--------------------------------------------------------END CONTENT----------------------------------------------------*/
+/*--------------------------------------------------------BEGIN FOOTER-----------------------------------------------------------*/
+
+.footer {
+    background-size: cover;
+    background: url("./img_fon/footer_1.png") center center no-repeat;
+    background-size: cover;
+    clear: both;
+    float: left;
+    height: 130px;
+    margin: -50px -2% 0 -2%;
+    padding: 0 2%;
+    position: relative;
+    width: 100%;
+    z-index: -100;
+}
+.footer .fot_content {
+    height: 55px;
+    margin: 45px 0 0 0px;
+    text-align: center;
+    text-shadow: 2px 2px 1px black;
+    width: 100%;
+}
+.footer ul {
+    list-style: none;
+}
+.footer ul li {
+    float: left;
+}
+.footer .textwidget {
+    background: none;
+    border: none;
+}
+.footer li[id*="5"] {
+    width: 25%;
+    text-align: left;
+}
+.footer li[id*="4"] {
+    width: 50%;
+    text-align: center;
+}
+.footer li[id*="6"] {
+    width: 25%;
+    text-align: left;
+    padding-top:1em;
+}
+/*--------------------------------------------------------END FOOTER-----------------------------------------------------------*/
+
+div.schet {
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 88px;
+    height: 31px;
+}
+/*-------------------------------------------------------BEGIN ALL-FORMS---------------------------------------------------------*/
+
+form textarea,
+.login,
+.password,
+input {
+    background: #3e3636;
+    border: none;
+    box-shadow: 2px 2px 1px black inset;
+    color: #eddb74;
+    margin: .5em 0;
+    padding: .5em;
+}
+form textarea:focus,
+.login:focus,
+.password:focus,
+input:focus {
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+}
+input {
+    box-shadow: 2px 2px 1px black;
+}
+input[type="radio"] {
+    box-shadow: none;
+}
+form p a.form_a {
+    display: inline;
+    padding: 0 .5em;
+}
+/*-------------------------------------------------------END ALL-FORMS---------------------------------------------------------*/
+
+#rez_golosovanie {
+    display: none;
+}
+/********************For WP***********************/
+
+#wp-calendar a[title*=' '] {
+    background: #000;
+    border-radius: 50%;
+}
+#wp-calendar {
+    text-align: center;
+}
+img.class[*attachment-post-thumbnail] {
+    float: left;
+}
+.byuser {
+    float: none;
+    padding: .5em;
+    border: none;
+}
+.avatar.photo {
+    -webkit-box-shadow: 1px 1px 2px #ffc;
+    box-shadow: 1px 1px 2px #ffc;
+}
+/*******************coments for WP begin*************/
+/***********ratings*************/
+
+.postleft {
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+.postright {
+    width: 50%;
+    text-align: right;
+    float: right;
+}
+/***********ratings*************/
+
+form p label {
+    display: block;
+    font: bold 1.1em italic serif, tahoma;
+    color: #ccc;
+}
+form p {
+    text-align: center;
+}
+.main-list-comments * {
+    float: none;
+}
+.main-list-comments li {
+    padding: .5em;
+    border: 0;
+    width: 98%;
+    border-left: 1px dotted #eed025;
+}
+img.avatar {
+    float: left;
+    margin: .5em;
+}
+#commentform {
+    vertical-align: top;
+}
+.comment {
+    vertical-align: top;
+}
+.children {
+    margin-left: 4em;
+}
+#reply-title a {
+    color: black;
+    text-decoration: underline;
+}
+#reply-title a:hover {
+    color: gray;
+    text-decoration: none;
+}
+div [id*='comment-'] > p {
+    margin-left: 4.5em;
+}
+li [class*="depth-"] {
+    width: 93%;
+}
+textarea {
+    width: 80%;
+    height: 5em;
+}
+.reply {
+    text-align: right;
+    padding: 0 2em;
+}
+/*************TWC comment begin**************/
+
+form .h2 > h3 {
+    margin-top: 0;
+}
+/*************TWC comment end**************/
+
+.last_news .wp-pagenavi {
+    overflow: visible;
+    padding: 1em;
+}
+.baner {
+    display: block;
+    margin: 0 auto;
+}
+#wp-calendar a[aria-label*='Записи']{
+    background: black none repeat scroll 0 0;
+    border-radius: 1em;
+}
