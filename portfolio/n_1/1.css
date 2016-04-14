@@ -1,40 +1,25 @@
-/*Убираем все отступы*/
-
 * {
     padding: 0;
     margin: 0;
-     
 }
 body {
     background-color: #ada6a0;
-    /*задаем фоновый цвет для всей страницы*/
 }
-/*загружаем шрифт Rocwell_regular*/
-
 @font-face {
     font-family: Rockwell;
-    /*название гарнитуры шрифта*/
-    
     src: url(font/Rockwell.ttf);
 }
-/*создаем общий слой для всего что будет на странице*/
-
 .all {
     background: url("img/head.jpg") no-repeat center top #ada6a0;
-    /*добовляем градиенту в верху*/
-    
     height: 1365px;
     width: 1024px;
     margin: 0 auto;
-    /*позиционирем по центру*/
 }
-/*создаем блок для логотипа*/
-
 .header {
     height: 137px;
 }
-/*сам логотип*/
-.left:hover, .right:hover{
+.left:hover,
+.right:hover {
     cursor: pointer;
     opacity: 0.8;
 }
@@ -42,21 +27,15 @@ body {
     color: #666666;
     font: 88.5px bold Rockwell, arial, tahoma;
     opacity: 0.26;
-    /*добовляем прозрачность	*/
-    
     text-align: center;
     padding-top: 15px;
     padding-right: 10px;
     text-transform: uppercase;
 }
-/*отступы для всех блоков */
-
 .all>div {
     margin-left: 47px;
     margin-right: 47px;
 }
-/*BEGIN--- MENY*/
-
 .meny {
     height: 55px;
     background-color: #ffffff;
@@ -72,9 +51,9 @@ body {
     font: 18px bold Rockwell, tahoma;
     margin-left: 60px;
 }
-.meny a:hover{
-    color:black;
-    border-bottom:1px solid black;
+.meny a:hover {
+    color: black;
+    border-bottom: 1px solid black;
 }
 .meny form {
     margin: 15px;
@@ -83,8 +62,6 @@ body {
     border: 1px solid #ececec;
     position: relative;
 }
-/*BEGIN---- Поле SEARCH*/
-
 input {
     vertical-align: middle;
     padding: 0 10px;
@@ -94,33 +71,40 @@ input {
 input[type="image"] {
     margin-top: 4px;
 }
-/*END--- Поле SEARCH*/
-/*END---MENY*/
-/*BEGIN---ПРЕВЬЮ С КАРТИНКОЙ*/
-
 .priwey {
     background: #FFF;
     overflow: hidden;
 }
-#left{
-    display:none;
-}
 #background {
+    background: black;
     width: 903px;
     height: 347px;
-    background: url("img/1.jpg") black;
     margin: 13px auto;
+    position:relative;
 }
-/*END---ПРЕВЬЮ С КАРТИНКОЙ*/
-/*BEGIN---СТРЕЛКИ НА КОРТИНКЕ*/
-
+.box1,
+.box2{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: url("img/1.jpg") no-repeat center;*/
+    top:0;
+    left:0;
+}
+.box2{
+    background:  url("img/10.jpg") no-repeat center;*/
+}
 .right {
-    float: right;
+    position:absolute;
+    top:0;
+    right:0;
     margin-right: 14px;
     margin-top: 144px;
 }
 .left {
-    float: left;
+    position:absolute;
+    top:0;
+    left:0;
     margin-left: 14px;
     margin-top: 144px;
 }
@@ -130,15 +114,11 @@ input[type="image"] {
     height: 49px;
     opacity: 0.4;
 }
-/*END---СТРЕЛКИ НА КОРТИНКЕ*/
-
 .content,
 .priwey {
     height: 377px;
     margin-top: 15px;
 }
-/*BEGIN---CONTENT*/
-
 .content>div {
     margin-left: 11px;
     width: 224px;
@@ -148,9 +128,6 @@ input[type="image"] {
 .content>div:first-child {
     margin-left: 0;
 }
-/*END---CONTENT*/
-/*BEGIN---КОНТЕНТ С ЧЕТЕРЬМЯ БЛОКАМИ*/
-
 .cont {
     width: 200px;
     height: 350px;
@@ -166,8 +143,6 @@ input[type="image"] {
     line-height: 1.2em;
     text-indent: 35px;
 }
-/*END---КОНТЕНТ С ЧЕТЕРЬМЯ БЛОКАМИ*/
-
 .cont a,
 .podrobnee a {
     margin-top: 20px;
@@ -176,12 +151,10 @@ input[type="image"] {
     text-decoration: none;
 }
 .cont a:hover,
-.podrobnee a:hover{
-    color:black;
-    border-bottom:1px solid black;
+.podrobnee a:hover {
+    color: black;
+    border-bottom: 1px solid black;
 }
-/*BEGIN---БЛОК С ПОДРОБНЫМ ОПИСАНИЕМ ПОСЛЕ 4-Х*/
-
 .podrobnee {
     height: 187px;
     margin-top: 16px;
@@ -203,9 +176,6 @@ input[type="image"] {
     text-indent: 35px;
     font: 12px normal Rockwell, tahoma;
 }
-/*END---БЛОК С ПОДРОБНЫМ ОПИСАНИЕМ ПОСЛЕ 4-Х*/
-/*BEGIN---FOOTER*/
-
 .footer {
     height: 55px;
     margin-top: 15px;
@@ -217,9 +187,6 @@ input[type="image"] {
     margin-left: 20px;
     font: 14px normal Calibri, tahoma;
 }
-/*END---FOOTER*/
-/*Добовляем тень всем элементам и фоновый цвет*/
-
 .footer,
 .podrobnee,
 .content>div,
@@ -227,4 +194,60 @@ input[type="image"] {
 .meny {
     box-shadow: 0 0 3px black;
     background-color: #FFF;
+}
+/*------start modal -------*/
+#modal:after {
+    background: black;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity:.7;
+}
+#modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;  
+}
+#modal>div{
+    color:white;
+    width: 50%;
+    height: 10%;
+    background:#333;
+    position:relative;
+    margin:10% auto;
+    border-radius:5px;
+    box-shadow: 0 2px 2px rgba(0,0,0, .7);
+    padding: 3em 1em;
+    text-align:center;
+}
+#closed {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: black;
+    text-transform: uppercase;
+}
+#closed:hover {
+    text-decoration: underline;
+    color: gray;
+    cursor: pointer;
+}
+/*-----end modal----*/
+div[class*='box'] h3{
+    background: rgba(255,255,255, .4);
+    padding: .3em 4em;
+    position:absolute;
+    width: 100%;
+    box-sizing: border-box;
+    left:0;
+    bottom:0;
+}
+#background:hover{
+    cursor:pointer;
 }

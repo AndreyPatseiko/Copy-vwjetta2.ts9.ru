@@ -5,13 +5,13 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
 @import url(http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Cuprum:400italic,400);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
 body {
     background: #d5ac76 url("img/p_fon.jpg");
     margin: 1em 1em;
     overflow-x: hidden;
 }
-/*****************FOR TRANSITION*****************/
-
 a {
     -moz-transition: color .7s ease;
     -o-transition: color .7s ease;
@@ -24,30 +24,18 @@ a {
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
 }
-/*******************FOR TRANSITION END*************                 */
-
 .planshet_border {
+    box-shadow: 0 0 3px rgba(0, 0, 0, .6);
     position: relative;
     width: 890px;
     margin: 0 auto;
     background: url("img/pl/pl_bord_top_l.png") no-repeat top left, url("img/pl/pl_bord_top_r.png") no-repeat top right, url("img/pl/pl_bord_top.png") repeat-x top, url("img/pl/pl_bord_bot_l.png") no-repeat bottom left, url("img/pl/pl_bord_bot_r.png") no-repeat bottom right, url("img/pl/pl_bord_bot.png") repeat-x bottom, url("img/pl/pl_bord_r.png") repeat-y right, url("img/pl/pl_bord_l.png") repeat-y left, url("img/pl/pl_dots.png") repeat-y 2em 5em, url("img/pl/pl_body.png") repeat;
 }
-/*.right_img {
-    background: rgba(0, 0, 0, 0) url("img/pl/coffe.png") repeat scroll 0 0;
-    height: 690px;
-    position: absolute;
-    right: -223px;
-    top: 0;
-    width: 263px;
-}*/
-
 .about a.akor {
     margin: 0;
     padding: 0;
     font-size: 0;
 }
-/*********************************BEGIN HEADER*********************************/
-
 .logo {
     padding-top: 2.285714285714286em;
 }
@@ -90,12 +78,26 @@ ul li a:hover,
     text-decoration: none;
     color: black;
 }
-/*************************************************END HEADER*********************************/
-/**************************************************BEGIN ABOUT ME******************************/
-
 .about {
+    position: relative;
     background: url("img/bg_slach_1.png") no-repeat center bottom;
     padding: 0 3em 2em 4.5em;
+}
+.foto {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2em;
+    box-shadow: -2px 1px 2px rgba(0, 0, 0, .5);
+    background: white none repeat scroll 0 0;
+    border: .8em solid white;
+    left: -13em;
+    position: absolute;
+    top: -2em;
+    transform: rotate(-6deg);
+    z-index: -1;
+}
+.foto>img {
+    height: 200px;
+    width: 200px;
 }
 .about p,
 .after p {
@@ -106,9 +108,21 @@ ul li a:hover,
 .after p {
     text-indent: 0em;
     margin-top: unset;
+    padding-left: 1em;
+}
+.foto p {
+    margin: .7em 0 0;
 }
 #first {
     margin-top: 2em;
+}
+#first>img {
+    float: left;
+    padding: 0 1em 1em 0;
+    border-radius: .2em;
+}
+.container-fluid.content {
+    padding: 0 2em;
 }
 .about p a {
     font-weight: bold;
@@ -143,9 +157,6 @@ ul li a:hover,
 .vk {
     background: url("img/logo_gogl.png") right center no-repeat;
 }
-/**********************************************END ABOUT*********************/
-/************************************************BEGIN Portfolio*****************/
-
 .portfolio {
     background: url("img/bg_slach_2.png") no-repeat center bottom;
     padding-bottom: 3em;
@@ -155,11 +166,8 @@ ul li a:hover,
     font-size: 1.8em;
     text-transform: uppercase;
     font-weight: bold;
-    padding: .6em 3em .33em 2.5em;
+    padding: .6em 3em .33em 3em;
 }
-/***************************************************EnD PORTFOLIO************/
-/*****************************************************BEGIN SLIDER**********/
-
 .slider {
     overflow: hidden;
     width: 100%;
@@ -169,22 +177,51 @@ ul li a:hover,
     height: 320px;
     position: relative;
 }
-.slider img {
-    -webkit-transition: all .5s eas-in-out 1s;
-    -o-transition: all .5s eas-in-out 1s;
-    -moz-transition: all .5s eas-in-out 1s;
+.slider a {
+    position: relative;
     display: block;
-    margin: 1em auto;
+    background: gray;
+    margin: 3px;
+    width: 190px;
+    height: 110px;
+    transform-style: preserve-3d;
+}
+.slider a >img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
     padding: .1em;
     background: #fff;
     border: 3px solid gray;
+    border-radius: 3px 0 0 3px;
 }
-.slider img:hover {
+.myrow {
+    margin: 1em 0 1.5em;
+}
+.slider a>p {
     border: 3px solid black;
-    -moz-box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
-    -o-box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
-    -webkit-box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
-    box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
+    font-weight: bold;
+    background: #333;
+    padding: .7em;
+    border-radius: 0 3px 3px 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    color: white;
+    transform-origin: 0 50%;
+    transform: rotate3d(0, 1, 0, 90deg);
+}
+.slider a:hover {
+    transform: rotate3d(0, 1, 0, -90deg);
+    margin-left: -45%;
+}
+.slider a>p>span {
+    font-style: italic;
 }
 button {
     display: inline-block;
@@ -195,6 +232,7 @@ button {
 }
 .b_right {
     background: url("img/slider/l.png") center center no-repeat;
+    display: none;
 }
 .b_right:hover {
     background: url("img/slider/l_h.png") center center no-repeat;
@@ -234,9 +272,6 @@ button {
     left: -1000px;
     width: 90%;
 }
-/******************************************************END SLIDER************/
-/**************************************************BEGIN AFTER**************/
-
 .after {
     padding: 0 3em 2em 3.5em;
     min-height: 200px;
@@ -273,9 +308,6 @@ button {
     -webkit-box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
     box-shadow: 0 3px 5px 5px rgba(50, 50, 50, 0.25);
 }
-/****************************************************END AFTER*****************/
-/*****************************************************BEGIN FORM*************/
-
 #cerror {
     height: 6.2em;
 }
@@ -303,7 +335,7 @@ input[type='text'] {
     -webkit-border-image: url("img/form/border_input.png") 0 15 7 0 stretch stretch;
     -o-border-image: url("img/form/border_input.png") 0 15 7 0 stretch stretch;
     border-image: url("img/form/border_input.png") 0 15 7 0 stretch stretch;
-    moz-border-image: url("img/form/border_input.png") 0 15 7 0 stretch stretch;
+    -moz-border-image: url("img/form/border_input.png") 0 15 7 0 stretch stretch;
     width: 100%;
     padding: 0 .5em 0;
 }
@@ -315,23 +347,17 @@ textarea {
     -webkit-border-image: url("img/form/border.png") 0 15 7 0 stretch stretch;
     -o-border-image: url("img/form/border.png") 0 15 7 0 stretch stretch;
     border-image: url("img/form/border.png") 0 15 7 0 stretch stretch;
-    moz-border-image: url("img/form/border.png") 0 15 7 0 stretch stretch;
+    -moz-border-image: url("img/form/border.png") 0 15 7 0 stretch stretch;
     width: 100%;
     min-height: 150px;
     padding: 0 .5em 0;
 }
-/******************************************************END FORM********************/
-/*******************************************************BEGIN FOOTER************************/
-
 footer p {
     color: white;
     margin: 0 2em;
     text-align: center;
     vertical-align: bottom;
 }
-/*******************************************************END FOOTER************************/
-/*******************************************************BEGIN AFTER FORM *************************/
-
 .message {
     background: #ccc;
     width: 80%;
