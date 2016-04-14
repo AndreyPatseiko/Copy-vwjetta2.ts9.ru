@@ -3,7 +3,6 @@ $('a[href="#"]').on('click', function( event ) {
 	event.preventDefault();
 	$('#modal').fadeIn();
 });
-
 $('#closed').on('click',function(){
 	$('#modal').fadeOut();
 });

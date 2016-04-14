@@ -1,9 +1,26 @@
+$('a[href="#"]').on('click', function( event ) {
+    event.preventDefault();
+    $('#modal').fadeIn();
+});
+$('img[src*="img/pol"]').on('click', function() {
+    var cont = '<img src="'+$(this).attr('src')+'" style="width:400px;height:300px;border-radius:10px">';
+    $('#modal>div').css({'margin-top':'3em','height':'auto'});
+    $('#modal>div>h2').html(cont);
+    $('#modal').fadeIn();
+});
+
+$('#closed').on('click',function(){
+    var cont ='Sorry but this page is not ready yet';
+    $('#modal').fadeOut(500, function(){
+        $('#modal>div>h2').html(cont);
+        $('#modal>div').css({'margin-top':'10%','height':'auto'});
+    });
+});
+
 $(".find").on('click', function() {
     $('#search').toggleClass('fadeInRight');
 });
 // раскрытие меню
-
-
 $(".hMeny").on('click', function() {
     $('nav').slideToggle();
 });
@@ -14,10 +31,10 @@ $(".find").on('click', function() {
 if ($(window).width() <= 850)  {
     $('header').mouseleave(function() {
         $('nav').slideUp();
-            });
+    });
 
 };
- if ($(window).width() <= 850)  {   $('nav').slideUp();
+if ($(window).width() <= 850)  {   $('nav').slideUp();
 };
 // Скролл в верх
 $(function() {
@@ -49,15 +66,15 @@ $(function() {
 // оживляем слайдер
 $(function() {
     var slider = $("#slider"),
-        item = $("> input", slider),
-        block = $(".slides", slider),
-        pause = 5000,
-        play = true,
-        timer;
+    item = $("> input", slider),
+    block = $(".slides", slider),
+    pause = 5000,
+    play = true,
+    timer;
 
     function sliderAuto() {
         var i = item.index($(":checked")),
-            i = ++i % item.length;
+        i = ++i % item.length;
         play && item.eq(i).prop({
             "checked": true
         })
