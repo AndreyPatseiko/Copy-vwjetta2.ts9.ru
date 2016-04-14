@@ -30,9 +30,7 @@ $(".find").on('click', function() {
 });
 if ($(window).width() <= 850)  {
     $('header').mouseleave(function() {
-        $('nav').slideUp();
-    });
-
+        $('nav').slideUp();});
 };
 if ($(window).width() <= 850)  {   $('nav').slideUp();
 };
