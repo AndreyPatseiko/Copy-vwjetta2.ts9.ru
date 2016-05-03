@@ -18,15 +18,15 @@ $(document).ready(function() {
 // КОНЕЦ планой прокрутки
 
 //change langvig
-var arrEng = ["Hello! It's Me.",'My name is Andrey, 29 years old. I live in the city of Minsk. Higher Education: National Technical University EF.',
-'Previous experience is associated with activity in the industrial / energy sector. As the duties had acquired experience in negotiating with the customer, work planning and team management, automation of those. processes. My responsibilities included the entire range of works, ranging from the design and choice of electrical products, ending with the delivery and assembly of cabinets with PLCs, controllers EATON programming.',
-'At the same time I was always interested in the sphere of information technologies, in particular the development of web-applications, and self-studied material in this direction.',
-'As you learn HTML and CSS, with a view to the practical application of knowledge, I decided to try to create a <a href="http://vwjetta2.ts9.ru/" target="_blank">website</a> on the WordPress CMS, which posted articles about the repair of the car. The site has undergone a number of radical changes later. In addition, you can meet other examples of my work in my <a href="#portfolio">portfolio</a>.',
-'To acquire and improve skills engaged in the study of technical literature, view webinars, visit thematic meetings, courses "Development of web-applications on the HTML5" in BelHard.',
-'At the moment, I can implement HTML-layout with PSD-template to your TK, make changes to existing pages, create small projects, including websites, business cards, etc. Landing I am able to run Adobe Photoshop, with WordPress platform; I have basic knowledge of JavaScript, PHP, Node.js, Ajax, jQuery, Bootstrap.',
-'Very responsibly approach the implementation of any job, and doing all the maximum quality.',
-'I would like to apply their knowledge in "combat conditions" and not to invent work for "fictional client."',
-'Currently interested in employment for the position of Junior Frontend Developer (HTML Coder). Remote operation capability.',
+var arrEng = ["Hello! It's Me.",'My name is Andrey, 29 years old. I live in Minsk. I graduated from National Technical University, EF.',
+'My previous experience is closely related to industrial / energy sphere. Among my working responsibilities were: negotiating with customers, daily planning and team management, processes automation. On the whole, I was responsible for a wide range of activities,  including designing and selecting of electrical and technical environment, assembling of cabinets with PLCs, as well as programming of EATON controllers.',
+'At the same time I was always interested in the sphere of information technologies. My paticular interest was in web applications development, and I studied all related materials on this topic.',
+'As I learned more and more about HTML and CSS, I decided to create my own <a href="http://vwjetta2.ts9.ru/" target="_blank">website</a> on WordPress CMS to apply gained knowledge, where I posted articles about my experience with repairing my car. The site has undergone afterwards a number of radical changes. You can also see some more examples of websites I created in my <a href="#portfolio">portfolio</a>.',
+'In order to acquire new knowledge and improve my skills, I regularly study technical literature, watch webinars and visit IT events. I also took the course "Development of HTML5 web appications" in BelHard.',
+'At the moment, I can develop HTML layout from PSD in accordance with a technical specification, fix frontend issues in existing pages, create small projects including websites and landing pages. I have experience with Adobe Photoshop, WordPress platform, have basic knowledge of JavaScript, PHP, Node.js, Ajax, jQuery, Bootstrap.',
+'I always do my best to perform any task in due time and with maximum quality.',
+'Currently I am looking for Junior Frontend Developer (HTML Coder) job opportunities.',
+'',
 'Layout template for Wordpress and the content of the site.<br><span>HTML/CSS/Wordpress</span>',
 'Page-proofs<br><span>HTML/CSS/JS(JQ)</span>',
 'Page-proofs<br><span>HTML/CSS/JS(JQ)</span>',
@@ -77,7 +77,7 @@ $('.eng').on('click',function(){
 		return $(element).html(arrEng[index]);		
 	});
 	$('.portfolio h2').html('<a class="akor" id="portfolio"></a>portfolio');
-	$('.after h2').text('My contact details.');
+	$('.after h2').text('My contacts.');
 	$('ul a').each(function(index, element){
 		return $(element).html(aEng[index]);		
 	});

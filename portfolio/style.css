@@ -400,8 +400,8 @@ footer p {
 	padding: .3em .5em .2em .5em;
 	border:1px solid black;
 }
-span.eng{
-	float:right;
+#lang span.eng{
+    float:right;
 }
 #box2,
 #box3{
